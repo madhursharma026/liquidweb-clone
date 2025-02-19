@@ -1,0 +1,26 @@
+@media (min-width: 1424px) {
+    .ContainerWidth {
+        margin: 0 auto;
+        max-width: 1350px;
+    }
+}
+
+@media (max-width: 1425px) {
+    .ContainerWidth {
+        padding: 0 30px;
+    }
+}
+
+.mainHeading {
+    font-size: 68px;
+    text-align: left;
+    line-height: 1.2;
+    letter-spacing: -1.5px;
+    font-family: 'FK Grotesk Neue', Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 768px) {
+    .mainHeading {
+        font-size: 40px;
+    }
+}
