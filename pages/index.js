@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Section1 from "@/components/Homepage/Section1";
 import Section2 from "@/components/Homepage/Section2";
@@ -22,6 +23,7 @@ export default function Home() {
       <Section7 />
       <br /><br /><br /><br /><br />
       <br /><br /><br /><br /><br />
+      <Footer />
     </>
   );
 }

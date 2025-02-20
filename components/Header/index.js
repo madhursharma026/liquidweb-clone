@@ -1,8 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Link from "next/link";
-import style from "../../styles/Header/Header.module.css"; // Import CSS Module
-import { Nav } from "react-bootstrap";
+import style from "../../styles/Header/Header.module.css";
 
 function Header() {
     const [showNavbar, setShowNavbar] = useState(true);
