@@ -14,7 +14,7 @@ const Section7 = () => {
                     </video>
                     <div className={`${styles.content2}`}>
                         <div className={styles.contentContainer2}>
-                            <div className="row p-5">
+                            <div className="row p-md-5 p-3">
                                 <div className="col-lg-6 p-3">
                                     <div style={{ maxWidth: '400px' }}>
                                         <h1 className='fw-normal text-white' style={{ fontSize: '2.5rem', lineHeight: '70px' }}>

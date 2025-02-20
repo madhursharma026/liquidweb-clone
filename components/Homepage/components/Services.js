@@ -22,7 +22,7 @@ const Services = () => {
             {/* Right Side - Circle Graphic */}
             <div className="col-lg-6 mt-lg-0 mt-3 text-center">
                 <div className={`${styles.circleWrapper} w-100`}>
-                    <div className={`${styles.circle}`}>
+                    <div className={`${styles.circle} my-md-5`}>
                         <span className={styles.circleText}>100%<br />uptime</span>
                     </div>
                 </div>
