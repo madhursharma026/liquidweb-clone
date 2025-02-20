@@ -1,16 +1,22 @@
 import { useState, useEffect, useRef } from "react";
+import { useRouter } from "next/router";
 import Navbar from "react-bootstrap/Navbar";
 import Link from "next/link";
 import style from "../../styles/Header/Header.module.css";
 
 function Header() {
+    const router = useRouter();
+    const isHomePage = router.pathname === "/";
+
     const [showNavbar, setShowNavbar] = useState(true);
     const [isScrolled, setIsScrolled] = useState(false);
     const lastScrollY = useRef(0);
 
     useEffect(() => {
         const handleScroll = () => {
+            // Only use scroll behavior for widths > 1279px
             if (window.innerWidth > 1279) {
+                // If scrolling down, hide the navbar; if scrolling up, show it
                 if (window.scrollY > lastScrollY.current) {
                     setShowNavbar(false);
                 } else {
@@ -18,12 +24,22 @@ function Header() {
                 }
             }
             lastScrollY.current = window.scrollY;
-            setIsScrolled(window.scrollY > 0);
+
+            // Only change bg for homepage when scrolled (or scrolled up)
+            if (isHomePage) {
+                setIsScrolled(window.scrollY > 0);
+            }
         };
 
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
-    }, []);
+    }, [isHomePage]);
+
+    // Determine background and text colors based on page and scroll status
+    const headerBg = isHomePage ? (isScrolled ? "#1F242A" : "transparent") : "white";
+    const textColor = isHomePage ? "white" : "black";
+    const buttonBg = isHomePage ? "black" : "white";
+    const buttonText = isHomePage ? "white" : "black";
 
     return (
         <>
@@ -31,42 +47,53 @@ function Header() {
             <div
                 className={`${style.headerContainerBefore1280PX} ${showNavbar ? style.navbarVisible : style.navbarHidden}`}
                 style={{
-                    backgroundColor: isScrolled ? "#1F242A" : "transparent",
-                    color: "white",
+                    backgroundColor: headerBg,
+                    color: textColor,
                 }}
             >
                 <p className={style.announcementBar}>
                     Get blazing-fast processing and unmatched efficiency with our GPU hosting—now 30% off.
-                    <Link
-                        href="/shop"
-                        className={`btn mx-2 ${style.shopButton}`}
-                    >
+                    <Link href="/shop" className={`btn mx-2 ${style.shopButton}`}>
                         Shop now
                     </Link>
                     →
                 </p>
                 <Navbar className="px-4">
-                    <Navbar.Brand
-                        href="#home"
-                        className="fw-semibold"
-                        style={{ color: "white" }}
-                    >
+                    <Link href="/" className="fw-semibold text-decoration-none fs-5" style={{ color: textColor, flexShrink: '0' }}>
                         Liquid Web
-                    </Navbar.Brand>
+                    </Link>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
 
                     <Navbar.Collapse className="d-flex justify-content-center w-100">
-                        <Link href='#' className={`px-3 text-decoration-none text-white ${style.navOptions}`}>VPS Hosting Plans</Link>
-                        <Link href='#' className={`px-3 text-decoration-none text-white ${style.navOptions}`}>Wordpress Hosting</Link>
-                        <Link href='#' className={`px-3 text-decoration-none text-white ${style.navOptions}`}>All Hosting</Link>
+                        <Link
+                            href="vpshosting"
+                            className={`px-3 text-decoration-none ${isHomePage ? "text-white" : "text-black"} ${style.navOptions}`}
+                            style={{ borderBottomColor: "transparent" }}
+                        >
+                            VPS Hosting Plans
+                        </Link>
+                        <Link
+                            href="#"
+                            className={`px-3 text-decoration-none ${isHomePage ? "text-white" : "text-black"} ${style.navOptions}`}
+                            style={{ borderBottomColor: "transparent" }}
+                        >
+                            WordPress Hosting
+                        </Link>
+                        <Link
+                            href="#"
+                            className={`px-3 text-decoration-none ${isHomePage ? "text-white" : "text-black"} ${style.navOptions}`}
+                            style={{ borderBottomColor: "transparent" }}
+                        >
+                            All Hosting
+                        </Link>
                     </Navbar.Collapse>
                     <Navbar.Collapse className="justify-content-end">
                         <button
                             type="button"
                             className="btn"
                             style={{
-                                backgroundColor: isScrolled ? "white" : "black",
-                                color: isScrolled ? "black" : "white",
+                                backgroundColor: buttonBg,
+                                color: buttonText,
                             }}
                         >
                             <i className="fa fa-shopping-cart"></i>
@@ -76,31 +103,30 @@ function Header() {
             </div>
 
             {/* Always Sticky for width <= 1279px */}
-            <div className={style.headerContainerAfter1280PX}
+            <div
+                className={style.headerContainerAfter1280PX}
                 style={{
-                    backgroundColor: isScrolled ? "#1F242A" : "transparent",
-                    color: "white",
-                }}>
+                    backgroundColor: headerBg,
+                    color: textColor,
+                }}
+            >
                 <Navbar className="px-4">
-                    <Navbar.Brand href="#home" className="fw-semibold text-white">
+                    <Link href="/" className={`fw-semibold fs-5 ${isHomePage ? "text-white" : "text-black"} text-decoration-none`} style={{ flexShrink: '0' }}>
                         Liquid Web
-                    </Navbar.Brand>
-
+                    </Link>
                     <Navbar.Collapse className="justify-content-end">
-
-                        <i class="fa fa-search pointer" style={{ cursor: 'pointers' }}></i>
+                        <i className="fa fa-search pointer" style={{ cursor: 'pointer' }}></i>
                         <button
                             type="button"
                             className="btn mx-3"
                             style={{
-                                backgroundColor: isScrolled ? "white" : "black",
-                                color: isScrolled ? "black" : "white",
+                                backgroundColor: buttonBg,
+                                color: buttonText,
                             }}
                         >
                             <i className="fa fa-shopping-cart"></i>
                         </button>
-                        <i class="fa fa-bars pointer" style={{ cursor: 'pointers' }}></i>
-
+                        <i className="fa fa-bars pointer" style={{ cursor: 'pointer' }}></i>
                     </Navbar.Collapse>
                 </Navbar>
             </div>

@@ -5,7 +5,7 @@ import CommonStyle from '../../styles/commomStyle.module.css';
 
 const Footer = () => {
     return (
-        <div className={`${CommonStyle.ContainerWidth}`}>
+        <div className={`${CommonStyle.ContainerWidth} mb-5`}>
             <hr />
             <h5 className='pt-3 text-center'>Related hosting content</h5>
             <div className="d-flex justify-content-center w-100 mt-4 pb-3">

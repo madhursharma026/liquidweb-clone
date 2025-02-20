@@ -15,14 +15,6 @@
     transform: translateY(-100%);
 }
 
-.navOptions {
-    border-bottom: 2px solid transparent;
-}
-
-.navOptions:hover {
-    border-bottom: 2px solid white;
-}
-
 .announcementBar {
     margin: 0;
     background-color: black;
