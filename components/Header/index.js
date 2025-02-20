@@ -73,7 +73,7 @@ function Header() {
                             VPS Hosting Plans
                         </Link>
                         <Link
-                            href="#"
+                            href="/wordpresshosting"
                             className={`px-3 text-decoration-none ${isHomePage ? "text-white" : "text-black"} ${style.navOptions}`}
                             style={{ borderBottomColor: "transparent" }}
                         >
