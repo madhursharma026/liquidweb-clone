@@ -18,10 +18,10 @@
 .announcementBar {
     margin: 0;
     background-color: black;
-    padding: 8px;
+    padding: 6px;
     text-align: center;
     color: white;
-    font-size: 14.65px;
+    font-size: 13px;
 }
 
 .shopButton {
