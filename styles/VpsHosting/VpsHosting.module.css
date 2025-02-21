@@ -1,7 +1,6 @@
 /* General Styles */
 .contentContainer {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding: 80px 0;
 }
 
 @media (min-width: 1025px) {
@@ -69,11 +68,9 @@
     transform: translateX(5px);
 }
 
-/* Logo Styling */
 .logoImg {
-    max-width: 100px;
-    max-height: 60px;
-    object-fit: contain;
+    width: 100%;
+    height: 30px;
 }
 
 /* Scrollable Table */
@@ -94,18 +91,18 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    z-index: -1;
     width: auto;
     height: auto;
     min-width: 100%;
     min-height: 100%;
     transform: translate(-50%, -50%);
+    z-index: -1;
 }
 
 /* Content Section */
 .content2 {
-    z-index: 1;
     position: relative;
+    z-index: 1;
 }
 
 .contentContainer2 {
@@ -140,3 +137,122 @@
     margin: auto;
     background: linear-gradient(135deg, #e9edff 0%, #feb6a1 100%);
 }
+
+/* Circular Elements */
+.circleWrapper {
+    background: #F9EFE3;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.circleContainer {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.circle {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: #FCFDF0;
+    border-radius: 50%;
+    transition: transform 1s ease-in-out;
+}
+
+.circleOpen {
+    transform: scale(1.4);
+}
+
+.circleClose {
+    transform: scale(0.35);
+}
+
+.circleVideo {
+    max-width: 325px;
+    max-height: 325px;
+    z-index: 1;
+}
+
+/* Graph Container */
+.graphContainer {
+    width: 100%;
+    height: 400px;
+    padding: 20px;
+    background: linear-gradient(to right, #f2e4d6, #b7e0f2);
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.barsWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    height: 100%;
+}
+
+.barContainer {
+    width: 300px;
+    display: flex;
+    align-items: center;
+}
+
+.label {
+    width: 120px;
+    font-weight: 600;
+    color: #333;
+}
+
+.barBackground {
+    flex: 1;
+    height: 35px;
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+}
+
+.barFillWhite,
+.barFillBlack {
+    height: 100%;
+    text-align: right;
+    padding-right: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 30px;
+    transition: width 1s ease-in-out;
+}
+
+.barFillWhite {
+    background: #fff;
+    color: white;
+}
+
+.barFillBlack {
+    background: #000;
+    color: white;
+}
+
+.expanded {
+    transition: width 1s ease-in-out;
+}
+
+.collapsed {
+    transition: width 2s ease-in-out;
+}
+
+
+
+
+
+

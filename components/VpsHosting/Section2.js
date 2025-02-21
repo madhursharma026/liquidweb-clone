@@ -81,7 +81,7 @@ export default function Section1() {
       <div className="my-5">
         <h3 className="text-muted fw-normal">Trusted by top brands</h3>
         <div className="row justify-content-center align-items-center">
-          <div className="col-lg col-md-3 col-4 mt-3 text-center">
+          <div className={`col-lg col-md-3 col-4 mt-3 text-center`}>
             <img
               src={
                 'https://www.liquidweb.com/wp-content/uploads/2024/02/logo-gadget-gaurd.avif'
@@ -90,7 +90,7 @@ export default function Section1() {
               className={`img-fluid ${Styles.logoImg}`}
             />
           </div>
-          <div className="col-lg col-md-3 col-4 mt-3 text-center">
+          <div className={`col-lg col-md-3 col-4 mt-3 text-center`}>
             <img
               src={
                 'https://www.liquidweb.com/wp-content/uploads/2024/10/MLB-white.svg'
@@ -99,7 +99,7 @@ export default function Section1() {
               className={`img-fluid ${Styles.logoImg}`}
             />
           </div>
-          <div className="col-lg col-md-3 col-4 mt-3 text-center">
+          <div className={`col-lg col-md-3 col-4 mt-3 text-center`}>
             <img
               src={
                 'https://www.liquidweb.com/wp-content/uploads/2024/10/topps-white.svg'
@@ -108,7 +108,7 @@ export default function Section1() {
               className={`img-fluid ${Styles.logoImg}`}
             />
           </div>
-          <div className="col-lg col-md-3 col-4 mt-3 text-center">
+          <div className={`col-lg col-md-3 col-4 mt-3 text-center`}>
             <img
               src={
                 'https://www.liquidweb.com/wp-content/uploads/2024/09/solidwp.svg'
@@ -117,7 +117,7 @@ export default function Section1() {
               className={`img-fluid ${Styles.logoImg}`}
             />
           </div>
-          <div className="col-lg col-md-3 col-4 mt-3 text-center">
+          <div className={`col-lg col-md-3 col-4 mt-3 text-center`}>
             <img
               src={
                 'https://www.liquidweb.com/wp-content/uploads/2024/09/populi-lockup-1.svg'
@@ -126,7 +126,7 @@ export default function Section1() {
               className={`img-fluid ${Styles.logoImg}`}
             />
           </div>
-          <div className="col-lg col-md-3 col-4 mt-3 text-center">
+          <div className={`col-lg col-md-3 col-4 mt-3 text-center`}>
             <img
               src={
                 'https://www.liquidweb.com/wp-content/uploads/2024/10/brightedge.avif'
@@ -135,7 +135,7 @@ export default function Section1() {
               className={`img-fluid ${Styles.logoImg}`}
             />
           </div>
-          <div className="col-lg col-md-3 col-4 mt-3 text-center">
+          <div className={`col-lg col-md-3 col-4 mt-3 text-center`}>
             <img
               src={
                 'https://www.liquidweb.com/wp-content/uploads/2024/09/NC_State_University_brick_logo-1.svg'
@@ -144,7 +144,7 @@ export default function Section1() {
               className={`img-fluid ${Styles.logoImg}`}
             />
           </div>
-          <div className="col-lg col-md-3 col-4 mt-3 text-center">
+          <div className={`col-lg col-md-3 col-4 mt-3 text-center`}>
             <img
               src={
                 'https://www.liquidweb.com/wp-content/uploads/2024/09/datamaas-logo-final-2-1.svg'

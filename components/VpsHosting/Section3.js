@@ -1,6 +1,6 @@
 import CommonStyle from '../../styles/commomStyle.module.css'
 import Styles from '../../styles/VpsHosting/VpsHosting.module.css'
-import Services from '../Homepage/components/Services'
+import Services from './components/services'
 
 const sectionData = [
   {
@@ -68,8 +68,24 @@ export default function Section3() {
         ))}
       </div>
 
-      <Services />
-      <Services />
+      <Services
+        title={'Instant, easy scalability'}
+        description={
+          'Quickly scale your VPS server up or down from the command line or your management dashboard to handle growing demand.'
+        }
+        btnNeeded={false}
+        btnText={''}
+        videoContainerORGraphContainer={'video'}
+      />
+      <Services
+        title={'Lightning-fast VPS hosting'}
+        description={
+          'Liquid Web is known for delivering the fastest Linux, Apache, MySQL, and PHP (LAMP) stack performance. A third-party analyst found that our VPS speed is faster than Rackspace, DigitalOcean, and Amazon.'
+        }
+        btnNeeded={true}
+        btnText={'Explore Cloud VPS Hosting'}
+        videoContainerORGraphContainer={'graph'}
+      />
     </div>
   )
 }
