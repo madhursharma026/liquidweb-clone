@@ -28,7 +28,7 @@ export default function Section1() {
     <div className="p-0">
       <div className={styles.contentContainer}>
         <div className={CommonStyle.ContainerWidth}>
-          <div className="row">
+          <div className="row mt-5">
             {/* Left Column */}
             <div className="col-md-6">
               <span
@@ -88,7 +88,7 @@ export default function Section1() {
                   playsInline
                   width={700}
                   height={500}
-                  className="img-fluid"
+                  className="img-fluid p-lg-5"
                 >
                   <source src="/VPSHostingSection1Video.mp4" type="video/mp4" />
                   Your browser does not support the video tag.

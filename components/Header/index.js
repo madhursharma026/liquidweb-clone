@@ -73,8 +73,11 @@ const Header = () => {
               >
                 WordPress Hosting
               </Link>
-              <Link href="#" className="px-3 text-decoration-none text-black">
-                All Hosting
+              <Link
+                href="#SharedHosting"
+                className="px-3 text-decoration-none text-black"
+              >
+                Shared Hosting
               </Link>
             </Nav>
           </Navbar.Collapse>
@@ -83,30 +86,21 @@ const Header = () => {
             <Link
               href="#Support"
               className="px-3 text-decoration-none text-black"
-              style={{ borderBottomColor: 'transparent' }}
             >
               Support
             </Link>
             <Link
               href="#Contact"
               className="px-3 text-decoration-none text-black"
-              style={{ borderBottomColor: 'transparent' }}
             >
               Contact
             </Link>
             <Link
               href="#Login"
-              className="px-3 text-decoration-none text-black"
-              style={{ borderBottomColor: 'transparent' }}
+              className="px-3 text-decoration-none btn btn-outline-dark"
             >
-              Login
+              <i class="fa fa-sign-in fs-6" /> &nbsp; Login
             </Link>
-            <button type="button" className="btn py-1 px-2 btn-dark">
-              <i
-                className="fa fa-shopping-cart"
-                style={{ fontSize: '14px' }}
-              ></i>
-            </button>
           </Navbar.Collapse>
         </Navbar>
       </div>
@@ -148,10 +142,10 @@ const Header = () => {
             </li>
             <li className="list-group-item">
               <Link
-                href="#AllHosting"
+                href="#SharedHosting"
                 className="text-decoration-none text-black fw-semibold"
               >
-                All Hosting
+                Shared Hosting
               </Link>
             </li>
             <li className="list-group-item">
@@ -173,9 +167,9 @@ const Header = () => {
             <li className="list-group-item">
               <Link
                 href="#Login"
-                className="text-decoration-none text-black fw-semibold"
+                className="px-3 text-decoration-none btn btn-outline-dark w-100"
               >
-                Login
+                <i class="fa fa-sign-in fs-6" /> &nbsp; Login
               </Link>
             </li>
           </ul>

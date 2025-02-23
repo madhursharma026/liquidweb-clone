@@ -131,83 +131,239 @@ const Section7New = () => {
                 >
                   The ultimate in on-demand <br /> flexibility and scalability
                 </p>
-                <p className="mt-4" style={{ fontSize: '22px' }}>
-                  DDoS attack protection
-                </p>
-                <p style={{ fontSize: '17px' }}>
-                  Get real-time monitoring to mitigate malicious traffic and
-                  shield your website and server from sudden attacks.
-                </p>
-                <hr />
-                <p className="mt-4" style={{ fontSize: '22px' }}>
-                  Cloudflare CDN
-                </p>
-                <p style={{ fontSize: '17px' }}>
-                  Offset performance load to worldwide servers to speed up your
-                  site and enhance security protection.
-                </p>
-                <hr />
-                <p className="mt-4" style={{ fontSize: '22px' }}>
-                  Gigabit uplink
-                </p>
-                <p style={{ fontSize: '17px' }}>
-                  Get free data transfers for all inbound GB bandwidth and 5TB
-                  bandwidth on a fast GB network on dedicated Gigabit uplinks.
-                </p>
-                <hr />
-                <p className="mt-4" style={{ fontSize: '22px' }}>
-                  Server Secure Plus and Immunify 360 advanced security
-                </p>
-                <p style={{ fontSize: '17px' }}>
-                  Optimize security settings with exclusive Server Secure
-                  protection, and Immunify 360 available for fully managed
-                  Windows and Linux servers.
-                </p>
-                <hr />
-                <p className="mt-4" style={{ fontSize: '22px' }}>
-                  Unlimited sites with InterWorx
-                </p>
-                <p style={{ fontSize: '17px' }}>
-                  Get centralized hosting management and complete server control
-                  for all of your websites and servers.
-                </p>
-                <hr />
-                <p className="mt-4" style={{ fontSize: '22px' }}>
-                  Plesk and cPanel available
-                </p>
-                <p style={{ fontSize: '17px' }}>
-                  Easily manage your servers with system-level control that
-                  includes automated updates, application deployment, and
-                  maintenance.
-                </p>
-                <hr />
-                <p className="mt-4" style={{ fontSize: '22px' }}>
-                  Root access
-                </p>
-                <p style={{ fontSize: '17px' }}>
-                  Root-level access gives you full management control of your
-                  server environment.
-                </p>
-                <hr />
-                <p className="mt-4" style={{ fontSize: '22px' }}>
-                  100% network and power uptime SLAs
-                </p>
-                <p style={{ fontSize: '17px' }}>
-                  Get both 100% guaranteed power and network uptime assurance
-                  for all major routing devices within the network.
-                </p>
-                <hr />
-                <p className="mt-4" style={{ fontSize: '22px' }}>
-                  Dedicated IP address
-                </p>
-                <p style={{ fontSize: '17px' }}>
-                  Enhance performance, speed, and protection for your websites
-                  from a secure dedicated IP address.
-                </p>
-                <hr />
+                <div className="row">
+                  <div className="col-10">
+                    <p
+                      className="mt-4 text-semibold"
+                      style={{ fontSize: '20px' }}
+                    >
+                      Standard DDoS attack protection
+                    </p>
+                    <p style={{ fontSize: '15px', marginTop: '-12px' }}>
+                      Get real-time monitoring to mitigate malicious traffic and
+                      shield your website and server from sudden attacks.
+                    </p>
+                  </div>
+                  <div className="col-2 text-center d-flex align-items-center justify-content-center">
+                    <svg
+                      width="18px"
+                      viewBox="0 0 1024 1024"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden="true"
+                    >
+                      <path d="M517.344 1024c-4.121 0-9.272-0.858-15.453-2.573-5.837-1.376-12.019-3.782-18.543-7.213-71.769-40.864-132.55-76.922-182.342-108.173-49.449-31.245-89.283-61.466-119.501-90.656-29.875-29.53-51.681-61.293-65.417-95.29-13.392-34.336-20.088-74.688-20.088-121.046v-388.378c0-26.442 5.666-45.5 16.998-57.175 11.332-12.019 27.644-22.321 48.934-30.906 12.019-4.807 28.502-11.16 49.449-19.058 20.947-8.242 43.954-16.998 69.022-26.27 25.411-9.615 50.65-18.886 75.718-27.815 25.411-9.272 48.59-17.513 69.537-24.724 20.947-7.555 37.43-13.392 49.448-17.513 6.868-2.060 13.736-3.777 20.604-5.151 7.212-1.374 14.422-2.060 21.634-2.060s14.422 0.687 21.634 2.060c7.211 1.374 14.251 3.091 21.119 5.151 12.019 4.121 28.33 9.958 48.934 17.513 20.947 7.211 43.955 15.453 69.024 24.724 25.408 9.272 50.65 18.543 75.718 27.815 25.408 9.272 48.589 17.857 69.536 25.755s37.427 14.422 49.446 19.573c21.632 8.929 37.946 19.23 48.934 30.906 11.334 11.676 16.998 30.733 16.998 57.175v388.378c0 46.358-6.522 87.049-19.571 122.076-13.050 34.682-34.515 67.136-64.39 97.35-29.53 30.221-69.19 60.781-118.982 91.686-49.453 30.906-110.918 65.587-184.404 104.051-6.525 3.43-12.877 5.837-19.059 7.213-5.837 1.715-10.817 2.573-14.938 2.573zM459.654 744.307c8.929 0 16.998-2.061 24.209-6.182s13.564-10.304 19.059-18.541l242.090-381.684c3.091-5.151 6.010-10.645 8.762-16.483 2.746-5.837 4.122-11.676 4.122-17.513 0-12.019-4.467-21.462-13.395-28.33-8.928-7.211-18.886-10.817-29.875-10.817-15.11 0-27.469 7.898-37.088 23.694l-219.942 353.354-104.563-134.956c-6.525-8.585-12.877-14.423-19.059-17.514-5.837-3.090-12.534-4.636-20.088-4.636-11.676 0-21.462 4.292-29.361 12.877-7.898 8.241-11.847 18.2-11.847 29.875 0 5.837 1.030 11.676 3.091 17.513 2.404 5.494 5.494 10.817 9.272 15.968l129.288 158.65c6.868 8.928 13.908 15.277 21.119 19.053 7.212 3.782 15.281 5.67 24.209 5.67z"></path>
+                    </svg>
+                  </div>
+                  <hr />
+                  <div className="col-10">
+                    <p
+                      className="mt-4 text-semibold"
+                      style={{ fontSize: '20px' }}
+                    >
+                      Cloudflare CDN
+                    </p>
+                    <p style={{ fontSize: '15px', marginTop: '-12px' }}>
+                      Offset performance load to worldwide servers to speed up
+                      your site and enhance security protection.
+                    </p>
+                  </div>
+                  <div className="col-2 text-center d-flex align-items-center justify-content-center">
+                    <svg
+                      width="18px"
+                      viewBox="0 0 8 8"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M4.5 0c-1.21 0-2.27.86-2.5 2-1.1 0-2 .9-2 2s.9 2 2 2h4.5c.83 0 1.5-.67 1.5-1.5 0-.65-.42-1.29-1-1.5v-.5c0-1.38-1.12-2.5-2.5-2.5z"
+                        transform="translate(0 1)"
+                      ></path>
+                    </svg>
+                  </div>
+                  <hr />
+                  <div className="col-10">
+                    <p
+                      className="mt-4 text-semibold"
+                      style={{ fontSize: '20px' }}
+                    >
+                      Gigabit uplink
+                    </p>
+                    <p style={{ fontSize: '15px', marginTop: '-12px' }}>
+                      Get free data transfers for all inbound GB bandwidth and
+                      5TB bandwidth on a fast GB network on dedicated Gigabit
+                      uplinks.
+                    </p>
+                  </div>
+                  <div className="col-2 text-center d-flex align-items-center justify-content-center">
+                    <svg
+                      width="18px"
+                      viewBox="0 0 1024 1024"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden="true"
+                    >
+                      <path d="M782.906 334.482c-13.152 0.286-24.595-4.433-34.317-14.156-9.722-10.010-14.586-21.736-14.586-35.178 0-13.156 4.864-24.595 14.586-34.319 9.722-10.010 21.165-15.014 34.317-15.014 13.446 0 24.883 4.862 34.323 14.586 9.722 9.724 14.586 21.307 14.586 34.748s-4.864 25.025-14.586 34.748c-9.44 9.438-20.877 14.3-34.323 14.586zM782.906 561.418c-13.152 0.286-24.595-4.433-34.317-14.157-9.722-10.010-14.586-21.736-14.586-35.177 0-13.156 4.864-24.596 14.586-34.319 9.722-10.010 21.165-15.015 34.317-15.015 13.446 0 24.883 4.862 34.323 14.586 9.722 9.724 14.586 21.306 14.586 34.748s-4.864 25.024-14.586 34.748c-9.44 9.437-20.877 14.3-34.323 14.586zM782.906 787.923c-13.152 0.288-24.595-4.429-34.317-14.157-9.722-10.010-14.586-21.594-14.586-34.746 0-13.44 4.864-25.024 14.586-34.752 9.722-10.010 21.165-15.014 34.317-15.014 13.446 0 24.883 4.864 34.323 14.586 9.722 9.728 14.586 21.453 14.586 35.181 0 13.152-4.864 24.595-14.586 34.317-9.44 9.44-20.877 14.304-34.323 14.586zM978.099 440.443h-931.339v-83.224h931.339v83.224zM978.099 667.808h-931.339v-83.224h931.339v83.224zM151.434 922.63c-48.905 0-86.37-13.018-112.395-39.040-26.025-25.741-39.038-62.918-39.038-111.539v-519.077c0-48.905 13.013-86.227 39.038-111.967s63.49-38.609 112.395-38.609h721.136c49.19 0 86.656 13.012 112.39 39.038 26.029 25.739 39.040 62.918 39.040 111.537v519.077c0 48.621-13.011 85.798-39.040 111.539-25.734 26.022-63.2 39.040-112.39 39.040h-721.136zM163.445 811.949h697.112c17.158 0 30.17-4.288 39.034-12.87 9.152-8.864 13.728-22.451 13.728-40.755v-492.051c0-18.303-4.576-31.745-13.728-40.325-8.864-8.58-21.875-12.87-39.034-12.87h-697.112c-17.16 0-30.315 4.29-39.467 12.87-8.866 8.58-13.299 22.022-13.299 40.325v492.051c0 18.304 4.433 31.891 13.299 40.755 9.152 8.582 22.307 12.87 39.467 12.87z"></path>
+                    </svg>
+                  </div>
+                  <hr />
+                  <div className="col-10">
+                    <p
+                      className="mt-4 text-semibold"
+                      style={{ fontSize: '20px' }}
+                    >
+                      Server Secure Plus and Immunify 360 advanced security
+                    </p>
+                    <p style={{ fontSize: '15px', marginTop: '-12px' }}>
+                      Optimize security settings with exclusive Server Secure
+                      protection, and Immunify 360 available for fully managed
+                      Windows and Linux servers.
+                    </p>
+                  </div>
+                  <div className="col-2 text-center d-flex align-items-center justify-content-center">
+                    <svg
+                      width={'18px'}
+                      viewBox="0 0 448 512"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden="true"
+                    >
+                      <path d="M400 224h-24v-72C376 68.2 307.8 0 224 0S72 68.2 72 152v72H48c-26.5 0-48 21.5-48 48v192c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V272c0-26.5-21.5-48-48-48zm-104 0H152v-72c0-39.7 32.3-72 72-72s72 32.3 72 72v72z"></path>
+                    </svg>
+                  </div>
+                  <hr />
+                  <div className="col-10">
+                    <p
+                      className="mt-4 text-semibold"
+                      style={{ fontSize: '20px' }}
+                    >
+                      Unlimited sites with InterWorx
+                    </p>
+                    <p style={{ fontSize: '15px', marginTop: '-12px' }}>
+                      Get centralized hosting management and complete server
+                      control for all of your websites and servers.
+                    </p>
+                  </div>
+                  <div className="col-2 text-center d-flex align-items-center justify-content-center">
+                    <svg
+                      width={'18px'}
+                      viewBox="0 0 512 512"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden="true"
+                    >
+                      <path d="M502.63 214.63l-45.25-45.25c-6-6-14.14-9.37-22.63-9.37H384V80c0-26.51-21.49-48-48-48H176c-26.51 0-48 21.49-48 48v80H77.25c-8.49 0-16.62 3.37-22.63 9.37L9.37 214.63c-6 6-9.37 14.14-9.37 22.63V320h128v-16c0-8.84 7.16-16 16-16h32c8.84 0 16 7.16 16 16v16h128v-16c0-8.84 7.16-16 16-16h32c8.84 0 16 7.16 16 16v16h128v-82.75c0-8.48-3.37-16.62-9.37-22.62zM320 160H192V96h128v64zm64 208c0 8.84-7.16 16-16 16h-32c-8.84 0-16-7.16-16-16v-16H192v16c0 8.84-7.16 16-16 16h-32c-8.84 0-16-7.16-16-16v-16H0v96c0 17.67 14.33 32 32 32h448c17.67 0 32-14.33 32-32v-96H384v16z"></path>
+                    </svg>
+                  </div>
+                  <hr />
+                  <div className="col-10">
+                    <p
+                      className="mt-4 text-semibold"
+                      style={{ fontSize: '20px' }}
+                    >
+                      Plesk and cPanel available
+                    </p>
+                    <p style={{ fontSize: '15px', marginTop: '-12px' }}>
+                      Easily manage your servers with system-level control that
+                      includes automated updates, application deployment, and
+                      maintenance.
+                    </p>
+                  </div>
+                  <div className="col-2 text-center d-flex align-items-center justify-content-center">
+                    <svg
+                      width={'18px'}
+                      viewBox="0 0 1024 1024"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden="true"
+                    >
+                      <path d="M0 693.549c0-14.707 1.337-29.414 4.011-44.122 2.941-14.708 8.423-31.555 16.445-50.54l166.856-388.262c11.231-26.205 28.211-46.527 50.94-60.966 22.996-14.44 49.603-21.66 79.818-21.66 38.505 0 69.256 11.231 92.252 33.692 23.263 22.461 34.895 52.009 34.895 88.643v41.313c10.696-3.476 21.66-6.017 32.89-7.62 11.231-1.872 22.595-2.808 34.093-2.808 12.301 0 23.932 0.668 34.895 2.005s21.526 3.343 31.687 6.017v-38.906c0-36.634 11.498-66.181 34.494-88.643 23.264-22.461 54.147-33.692 92.656-33.692 29.946 0 56.282 7.22 79.014 21.66 22.995 14.439 40.243 34.762 51.738 60.966l166.458 388.262c8.288 18.985 13.773 35.831 16.448 50.54 2.938 14.707 4.41 29.414 4.41 44.122 0 37.434-10.163 70.861-30.483 100.269-20.058 29.414-46.931 52.678-80.621 69.792s-70.995 25.67-111.904 25.67c-40.915 0-78.214-8.557-111.91-25.67-33.69-17.114-60.563-40.378-80.618-69.792-19.788-29.408-29.681-62.835-29.681-100.269v-105.491c-17.381-6.15-39.575-9.226-66.582-9.226-11.765 0-23.397 1.069-34.895 3.209s-22.194 5.080-32.088 8.824v102.683c0 37.434-10.028 70.861-30.082 100.269-20.055 29.414-46.929 52.678-80.621 69.792s-70.86 25.67-111.505 25.67c-40.912 0-78.214-8.557-111.906-25.67s-60.7-40.378-81.022-69.792c-20.055-29.408-30.082-62.835-30.082-100.269zM62.972 693.549c0 26.739 7.086 50.266 21.258 70.592 14.172 20.32 33.291 36.23 57.357 47.731 24.066 11.494 51.206 17.248 81.423 17.248s57.491-5.754 81.823-17.248c24.601-11.232 44.121-27.008 58.561-47.334 14.439-20.32 21.659-43.987 21.659-70.989 0-27.008-7.22-50.675-21.659-70.996-14.44-20.323-33.96-36.099-58.561-47.329-24.6-11.498-51.875-17.247-81.823-17.247-30.216 0-57.357 5.749-81.423 17.247-24.066 11.231-43.185 27.007-57.357 47.329-14.172 20.321-21.258 43.988-21.258 70.996zM638.947 693.549c0 27.002 7.222 50.669 21.661 70.989 14.438 20.326 33.824 36.102 58.157 47.334 24.602 11.494 52.006 17.248 82.227 17.248 30.214 0 57.357-5.754 81.421-17.248 24.064-11.501 43.053-27.411 56.954-47.731 14.176-20.326 21.261-43.853 21.261-70.592 0-27.008-7.085-50.675-21.261-70.996-13.901-20.323-32.89-36.099-56.954-47.329-24.064-11.498-51.206-17.247-81.421-17.247-30.221 0-57.626 5.749-82.227 17.247-24.333 11.231-43.718 27.007-58.157 47.329-14.438 20.321-21.661 43.988-21.661 70.996zM445.217 468.531c9.894-3.743 20.589-6.685 32.088-8.824s23.13-3.209 34.895-3.209c27.007 0 49.201 2.941 66.582 8.824v-53.747c-10.161-2.407-20.723-4.278-31.687-5.615s-22.595-2.006-34.895-2.006c-23.263 0-45.591 3.343-66.983 10.028v54.549z"></path>
+                    </svg>
+                  </div>
+                  <hr />
+                  <div className="col-10">
+                    <p
+                      className="mt-4 text-semibold"
+                      style={{ fontSize: '20px' }}
+                    >
+                      Root access
+                    </p>
+                    <p style={{ fontSize: '15px', marginTop: '-12px' }}>
+                      Root-level access gives you full management control of
+                      your server environment.
+                    </p>
+                  </div>
+                  <div className="col-2 text-center d-flex align-items-center justify-content-center">
+                    <svg
+                      width={'18px'}
+                      viewBox="0 0 1024 1024"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden="true"
+                    >
+                      <path d="M176.23 888.973c-34.712 0-65.419-7.418-92.12-22.253-26.405-14.835-47.024-35.309-61.858-61.414-14.834-26.406-22.251-56.813-22.251-91.232 0-34.413 7.417-64.826 22.251-91.228 14.834-26.404 35.454-47.024 61.858-61.858 26.701-14.834 57.408-22.252 92.12-22.252h671.54c34.714 0 65.274 7.418 91.674 22.252 26.701 14.834 47.469 35.453 62.304 61.858 14.835 26.403 22.253 56.815 22.253 91.228 0 34.419-7.418 64.826-22.253 91.232-14.835 26.106-35.603 46.579-62.304 61.414-26.4 14.835-56.96 22.253-91.674 22.253h-671.54zM176.23 477.768c-21.065 0-41.091 2.374-60.079 7.121-18.988 4.451-36.788 10.829-53.403 19.136l106.806-256.779c13.944-33.525 35.009-59.040 63.194-76.544 28.185-17.801 61.413-26.701 99.685-26.701h359.132c38.573 0 71.802 8.9 99.686 26.701 28.186 17.504 49.248 43.019 63.194 76.544l106.362 256.779c-34.118-17.504-71.795-26.257-113.037-26.257h-671.54zM783.245 714.963c0 16.026 5.632 29.523 16.909 40.499 11.571 10.976 25.216 16.467 40.941 16.467 15.43 0 28.781-5.491 40.051-16.467 11.277-11.27 16.915-24.774 16.915-40.499 0-15.424-5.638-28.774-16.915-40.051-11.27-11.571-24.621-17.357-40.051-17.357-15.725 0-29.37 5.786-40.941 17.357-11.277 11.277-16.909 24.627-16.909 40.051z"></path>
+                    </svg>
+                  </div>
+                  <hr />
+                  <div className="col-10">
+                    <p
+                      className="mt-4 text-semibold"
+                      style={{ fontSize: '20px' }}
+                    >
+                      100% network and power uptime SLAs
+                    </p>
+                    <p style={{ fontSize: '15px', marginTop: '-12px' }}>
+                      Get both 100% guaranteed power and network uptime
+                      assurance for all major routing devices within the
+                      network.
+                    </p>
+                  </div>
+                  <div className="col-2 text-center d-flex align-items-center justify-content-center">
+                    <svg
+                      width={'18px'}
+                      viewBox="0 0 8 8"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden="true"
+                    >
+                      <path d="M4 0l-4 3h1v4h2v-2h2v2h2v-4.03l1 .03-4-3z"></path>
+                    </svg>
+                  </div>
+                  <hr />
+                  <div className="col-10">
+                    <p
+                      className="mt-4 text-semibold"
+                      style={{ fontSize: '20px' }}
+                    >
+                      Dedicated IP address
+                    </p>
+                    <p style={{ fontSize: '15px', marginTop: '-12px' }}>
+                      Enhance performance, speed, and protection for your
+                      websites from a secure dedicated IP address.
+                    </p>
+                  </div>
+                  <div className="col-2 text-center d-flex align-items-center justify-content-center">
+                    <svg
+                      width={'18px'}
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden="true"
+                    >
+                      <polyline points="16 18 22 12 16 6"></polyline>
+                      <polyline points="8 6 2 12 8 18"></polyline>
+                    </svg>
+                  </div>
+                  <hr />
+                </div>
               </div>
               <div
-                className="col-lg-3 offset-lg-1 text-center"
+                className="col-lg-3 offset-lg-1 text-center pt-5"
                 style={{
                   position: 'sticky',
                   top: 100,
@@ -235,80 +391,245 @@ const Section7New = () => {
               />
             </div>
             <div className="mt-3">
-              <p className="mt-4" style={{ fontSize: '22px' }}>
-                DDoS attack protection
-              </p>
-              <p style={{ fontSize: '17px' }}>
-                Get real-time monitoring to mitigate malicious traffic and
-                shield your website and server from sudden attacks.
-              </p>
-              <hr />
-              <p className="mt-4" style={{ fontSize: '22px' }}>
-                Cloudflare CDN
-              </p>
-              <p style={{ fontSize: '17px' }}>
-                Offset performance load to worldwide servers to speed up your
-                site and enhance security protection.
-              </p>
-              <hr />
-              <p className="mt-4" style={{ fontSize: '22px' }}>
-                Gigabit uplink
-              </p>
-              <p style={{ fontSize: '17px' }}>
-                Get free data transfers for all inbound GB bandwidth and 5TB
-                bandwidth on a fast GB network on dedicated Gigabit uplinks.
-              </p>
-              <hr />
-              <p className="mt-4" style={{ fontSize: '22px' }}>
-                Server Secure Plus and Immunify 360 advanced security
-              </p>
-              <p style={{ fontSize: '17px' }}>
-                Optimize security settings with exclusive Server Secure
-                protection, and Immunify 360 available for fully managed Windows
-                and Linux servers.
-              </p>
-              <hr />
-              <p className="mt-4" style={{ fontSize: '22px' }}>
-                Unlimited sites with InterWorx
-              </p>
-              <p style={{ fontSize: '17px' }}>
-                Get centralized hosting management and complete server control
-                for all of your websites and servers.
-              </p>
-              <hr />
-              <p className="mt-4" style={{ fontSize: '22px' }}>
-                Plesk and cPanel available
-              </p>
-              <p style={{ fontSize: '17px' }}>
-                Easily manage your servers with system-level control that
-                includes automated updates, application deployment, and
-                maintenance.
-              </p>
-              <hr />
-              <p className="mt-4" style={{ fontSize: '22px' }}>
-                Root access
-              </p>
-              <p style={{ fontSize: '17px' }}>
-                Root-level access gives you full management control of your
-                server environment.
-              </p>
-              <hr />
-              <p className="mt-4" style={{ fontSize: '22px' }}>
-                100% network and power uptime SLAs
-              </p>
-              <p style={{ fontSize: '17px' }}>
-                Get both 100% guaranteed power and network uptime assurance for
-                all major routing devices within the network.
-              </p>
-              <hr />
-              <p className="mt-4" style={{ fontSize: '22px' }}>
-                Dedicated IP address
-              </p>
-              <p style={{ fontSize: '17px' }}>
-                Enhance performance, speed, and protection for your websites
-                from a secure dedicated IP address.
-              </p>
-              <hr />
+              <div className="row">
+                <div className="col-lg-8" style={{ overflowY: 'auto' }}>
+                  <p
+                    className={`${styles.Heading} mt-md-5 mt-3 d-lg-block d-none`}
+                  >
+                    The ultimate in on-demand <br /> flexibility and scalability
+                  </p>
+                  <div className="row">
+                    <div className="col-10">
+                      <p
+                        className="mt-4 text-semibold"
+                        style={{ fontSize: '20px' }}
+                      >
+                        Standard DDoS attack protection
+                      </p>
+                      <p style={{ fontSize: '15px', marginTop: '-12px' }}>
+                        Get real-time monitoring to mitigate malicious traffic
+                        and shield your website and server from sudden attacks.
+                      </p>
+                    </div>
+                    <div className="col-2 text-center d-flex align-items-center justify-content-center">
+                      <svg
+                        width="18px"
+                        viewBox="0 0 1024 1024"
+                        fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true"
+                      >
+                        <path d="M517.344 1024c-4.121 0-9.272-0.858-15.453-2.573-5.837-1.376-12.019-3.782-18.543-7.213-71.769-40.864-132.55-76.922-182.342-108.173-49.449-31.245-89.283-61.466-119.501-90.656-29.875-29.53-51.681-61.293-65.417-95.29-13.392-34.336-20.088-74.688-20.088-121.046v-388.378c0-26.442 5.666-45.5 16.998-57.175 11.332-12.019 27.644-22.321 48.934-30.906 12.019-4.807 28.502-11.16 49.449-19.058 20.947-8.242 43.954-16.998 69.022-26.27 25.411-9.615 50.65-18.886 75.718-27.815 25.411-9.272 48.59-17.513 69.537-24.724 20.947-7.555 37.43-13.392 49.448-17.513 6.868-2.060 13.736-3.777 20.604-5.151 7.212-1.374 14.422-2.060 21.634-2.060s14.422 0.687 21.634 2.060c7.211 1.374 14.251 3.091 21.119 5.151 12.019 4.121 28.33 9.958 48.934 17.513 20.947 7.211 43.955 15.453 69.024 24.724 25.408 9.272 50.65 18.543 75.718 27.815 25.408 9.272 48.589 17.857 69.536 25.755s37.427 14.422 49.446 19.573c21.632 8.929 37.946 19.23 48.934 30.906 11.334 11.676 16.998 30.733 16.998 57.175v388.378c0 46.358-6.522 87.049-19.571 122.076-13.050 34.682-34.515 67.136-64.39 97.35-29.53 30.221-69.19 60.781-118.982 91.686-49.453 30.906-110.918 65.587-184.404 104.051-6.525 3.43-12.877 5.837-19.059 7.213-5.837 1.715-10.817 2.573-14.938 2.573zM459.654 744.307c8.929 0 16.998-2.061 24.209-6.182s13.564-10.304 19.059-18.541l242.090-381.684c3.091-5.151 6.010-10.645 8.762-16.483 2.746-5.837 4.122-11.676 4.122-17.513 0-12.019-4.467-21.462-13.395-28.33-8.928-7.211-18.886-10.817-29.875-10.817-15.11 0-27.469 7.898-37.088 23.694l-219.942 353.354-104.563-134.956c-6.525-8.585-12.877-14.423-19.059-17.514-5.837-3.090-12.534-4.636-20.088-4.636-11.676 0-21.462 4.292-29.361 12.877-7.898 8.241-11.847 18.2-11.847 29.875 0 5.837 1.030 11.676 3.091 17.513 2.404 5.494 5.494 10.817 9.272 15.968l129.288 158.65c6.868 8.928 13.908 15.277 21.119 19.053 7.212 3.782 15.281 5.67 24.209 5.67z"></path>
+                      </svg>
+                    </div>
+                    <hr />
+                    <div className="col-10">
+                      <p
+                        className="mt-4 text-semibold"
+                        style={{ fontSize: '20px' }}
+                      >
+                        Cloudflare CDN
+                      </p>
+                      <p style={{ fontSize: '15px', marginTop: '-12px' }}>
+                        Offset performance load to worldwide servers to speed up
+                        your site and enhance security protection.
+                      </p>
+                    </div>
+                    <div className="col-2 text-center d-flex align-items-center justify-content-center">
+                      <svg
+                        width="18px"
+                        viewBox="0 0 8 8"
+                        fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M4.5 0c-1.21 0-2.27.86-2.5 2-1.1 0-2 .9-2 2s.9 2 2 2h4.5c.83 0 1.5-.67 1.5-1.5 0-.65-.42-1.29-1-1.5v-.5c0-1.38-1.12-2.5-2.5-2.5z"
+                          transform="translate(0 1)"
+                        ></path>
+                      </svg>
+                    </div>
+                    <hr />
+                    <div className="col-10">
+                      <p
+                        className="mt-4 text-semibold"
+                        style={{ fontSize: '20px' }}
+                      >
+                        Gigabit uplink
+                      </p>
+                      <p style={{ fontSize: '15px', marginTop: '-12px' }}>
+                        Get free data transfers for all inbound GB bandwidth and
+                        5TB bandwidth on a fast GB network on dedicated Gigabit
+                        uplinks.
+                      </p>
+                    </div>
+                    <div className="col-2 text-center d-flex align-items-center justify-content-center">
+                      <svg
+                        width="18px"
+                        viewBox="0 0 1024 1024"
+                        fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true"
+                      >
+                        <path d="M782.906 334.482c-13.152 0.286-24.595-4.433-34.317-14.156-9.722-10.010-14.586-21.736-14.586-35.178 0-13.156 4.864-24.595 14.586-34.319 9.722-10.010 21.165-15.014 34.317-15.014 13.446 0 24.883 4.862 34.323 14.586 9.722 9.724 14.586 21.307 14.586 34.748s-4.864 25.025-14.586 34.748c-9.44 9.438-20.877 14.3-34.323 14.586zM782.906 561.418c-13.152 0.286-24.595-4.433-34.317-14.157-9.722-10.010-14.586-21.736-14.586-35.177 0-13.156 4.864-24.596 14.586-34.319 9.722-10.010 21.165-15.015 34.317-15.015 13.446 0 24.883 4.862 34.323 14.586 9.722 9.724 14.586 21.306 14.586 34.748s-4.864 25.024-14.586 34.748c-9.44 9.437-20.877 14.3-34.323 14.586zM782.906 787.923c-13.152 0.288-24.595-4.429-34.317-14.157-9.722-10.010-14.586-21.594-14.586-34.746 0-13.44 4.864-25.024 14.586-34.752 9.722-10.010 21.165-15.014 34.317-15.014 13.446 0 24.883 4.864 34.323 14.586 9.722 9.728 14.586 21.453 14.586 35.181 0 13.152-4.864 24.595-14.586 34.317-9.44 9.44-20.877 14.304-34.323 14.586zM978.099 440.443h-931.339v-83.224h931.339v83.224zM978.099 667.808h-931.339v-83.224h931.339v83.224zM151.434 922.63c-48.905 0-86.37-13.018-112.395-39.040-26.025-25.741-39.038-62.918-39.038-111.539v-519.077c0-48.905 13.013-86.227 39.038-111.967s63.49-38.609 112.395-38.609h721.136c49.19 0 86.656 13.012 112.39 39.038 26.029 25.739 39.040 62.918 39.040 111.537v519.077c0 48.621-13.011 85.798-39.040 111.539-25.734 26.022-63.2 39.040-112.39 39.040h-721.136zM163.445 811.949h697.112c17.158 0 30.17-4.288 39.034-12.87 9.152-8.864 13.728-22.451 13.728-40.755v-492.051c0-18.303-4.576-31.745-13.728-40.325-8.864-8.58-21.875-12.87-39.034-12.87h-697.112c-17.16 0-30.315 4.29-39.467 12.87-8.866 8.58-13.299 22.022-13.299 40.325v492.051c0 18.304 4.433 31.891 13.299 40.755 9.152 8.582 22.307 12.87 39.467 12.87z"></path>
+                      </svg>
+                    </div>
+                    <hr />
+                    <div className="col-10">
+                      <p
+                        className="mt-4 text-semibold"
+                        style={{ fontSize: '20px' }}
+                      >
+                        Server Secure Plus and Immunify 360 advanced security
+                      </p>
+                      <p style={{ fontSize: '15px', marginTop: '-12px' }}>
+                        Optimize security settings with exclusive Server Secure
+                        protection, and Immunify 360 available for fully managed
+                        Windows and Linux servers.
+                      </p>
+                    </div>
+                    <div className="col-2 text-center d-flex align-items-center justify-content-center">
+                      <svg
+                        width={'18px'}
+                        viewBox="0 0 448 512"
+                        fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true"
+                      >
+                        <path d="M400 224h-24v-72C376 68.2 307.8 0 224 0S72 68.2 72 152v72H48c-26.5 0-48 21.5-48 48v192c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V272c0-26.5-21.5-48-48-48zm-104 0H152v-72c0-39.7 32.3-72 72-72s72 32.3 72 72v72z"></path>
+                      </svg>
+                    </div>
+                    <hr />
+                    <div className="col-10">
+                      <p
+                        className="mt-4 text-semibold"
+                        style={{ fontSize: '20px' }}
+                      >
+                        Unlimited sites with InterWorx
+                      </p>
+                      <p style={{ fontSize: '15px', marginTop: '-12px' }}>
+                        Get centralized hosting management and complete server
+                        control for all of your websites and servers.
+                      </p>
+                    </div>
+                    <div className="col-2 text-center d-flex align-items-center justify-content-center">
+                      <svg
+                        width={'18px'}
+                        viewBox="0 0 512 512"
+                        fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true"
+                      >
+                        <path d="M502.63 214.63l-45.25-45.25c-6-6-14.14-9.37-22.63-9.37H384V80c0-26.51-21.49-48-48-48H176c-26.51 0-48 21.49-48 48v80H77.25c-8.49 0-16.62 3.37-22.63 9.37L9.37 214.63c-6 6-9.37 14.14-9.37 22.63V320h128v-16c0-8.84 7.16-16 16-16h32c8.84 0 16 7.16 16 16v16h128v-16c0-8.84 7.16-16 16-16h32c8.84 0 16 7.16 16 16v16h128v-82.75c0-8.48-3.37-16.62-9.37-22.62zM320 160H192V96h128v64zm64 208c0 8.84-7.16 16-16 16h-32c-8.84 0-16-7.16-16-16v-16H192v16c0 8.84-7.16 16-16 16h-32c-8.84 0-16-7.16-16-16v-16H0v96c0 17.67 14.33 32 32 32h448c17.67 0 32-14.33 32-32v-96H384v16z"></path>
+                      </svg>
+                    </div>
+                    <hr />
+                    <div className="col-10">
+                      <p
+                        className="mt-4 text-semibold"
+                        style={{ fontSize: '20px' }}
+                      >
+                        Plesk and cPanel available
+                      </p>
+                      <p style={{ fontSize: '15px', marginTop: '-12px' }}>
+                        Easily manage your servers with system-level control
+                        that includes automated updates, application deployment,
+                        and maintenance.
+                      </p>
+                    </div>
+                    <div className="col-2 text-center d-flex align-items-center justify-content-center">
+                      <svg
+                        width={'18px'}
+                        viewBox="0 0 1024 1024"
+                        fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true"
+                      >
+                        <path d="M0 693.549c0-14.707 1.337-29.414 4.011-44.122 2.941-14.708 8.423-31.555 16.445-50.54l166.856-388.262c11.231-26.205 28.211-46.527 50.94-60.966 22.996-14.44 49.603-21.66 79.818-21.66 38.505 0 69.256 11.231 92.252 33.692 23.263 22.461 34.895 52.009 34.895 88.643v41.313c10.696-3.476 21.66-6.017 32.89-7.62 11.231-1.872 22.595-2.808 34.093-2.808 12.301 0 23.932 0.668 34.895 2.005s21.526 3.343 31.687 6.017v-38.906c0-36.634 11.498-66.181 34.494-88.643 23.264-22.461 54.147-33.692 92.656-33.692 29.946 0 56.282 7.22 79.014 21.66 22.995 14.439 40.243 34.762 51.738 60.966l166.458 388.262c8.288 18.985 13.773 35.831 16.448 50.54 2.938 14.707 4.41 29.414 4.41 44.122 0 37.434-10.163 70.861-30.483 100.269-20.058 29.414-46.931 52.678-80.621 69.792s-70.995 25.67-111.904 25.67c-40.915 0-78.214-8.557-111.91-25.67-33.69-17.114-60.563-40.378-80.618-69.792-19.788-29.408-29.681-62.835-29.681-100.269v-105.491c-17.381-6.15-39.575-9.226-66.582-9.226-11.765 0-23.397 1.069-34.895 3.209s-22.194 5.080-32.088 8.824v102.683c0 37.434-10.028 70.861-30.082 100.269-20.055 29.414-46.929 52.678-80.621 69.792s-70.86 25.67-111.505 25.67c-40.912 0-78.214-8.557-111.906-25.67s-60.7-40.378-81.022-69.792c-20.055-29.408-30.082-62.835-30.082-100.269zM62.972 693.549c0 26.739 7.086 50.266 21.258 70.592 14.172 20.32 33.291 36.23 57.357 47.731 24.066 11.494 51.206 17.248 81.423 17.248s57.491-5.754 81.823-17.248c24.601-11.232 44.121-27.008 58.561-47.334 14.439-20.32 21.659-43.987 21.659-70.989 0-27.008-7.22-50.675-21.659-70.996-14.44-20.323-33.96-36.099-58.561-47.329-24.6-11.498-51.875-17.247-81.823-17.247-30.216 0-57.357 5.749-81.423 17.247-24.066 11.231-43.185 27.007-57.357 47.329-14.172 20.321-21.258 43.988-21.258 70.996zM638.947 693.549c0 27.002 7.222 50.669 21.661 70.989 14.438 20.326 33.824 36.102 58.157 47.334 24.602 11.494 52.006 17.248 82.227 17.248 30.214 0 57.357-5.754 81.421-17.248 24.064-11.501 43.053-27.411 56.954-47.731 14.176-20.326 21.261-43.853 21.261-70.592 0-27.008-7.085-50.675-21.261-70.996-13.901-20.323-32.89-36.099-56.954-47.329-24.064-11.498-51.206-17.247-81.421-17.247-30.221 0-57.626 5.749-82.227 17.247-24.333 11.231-43.718 27.007-58.157 47.329-14.438 20.321-21.661 43.988-21.661 70.996zM445.217 468.531c9.894-3.743 20.589-6.685 32.088-8.824s23.13-3.209 34.895-3.209c27.007 0 49.201 2.941 66.582 8.824v-53.747c-10.161-2.407-20.723-4.278-31.687-5.615s-22.595-2.006-34.895-2.006c-23.263 0-45.591 3.343-66.983 10.028v54.549z"></path>
+                      </svg>
+                    </div>
+                    <hr />
+                    <div className="col-10">
+                      <p
+                        className="mt-4 text-semibold"
+                        style={{ fontSize: '20px' }}
+                      >
+                        Root access
+                      </p>
+                      <p style={{ fontSize: '15px', marginTop: '-12px' }}>
+                        Root-level access gives you full management control of
+                        your server environment.
+                      </p>
+                    </div>
+                    <div className="col-2 text-center d-flex align-items-center justify-content-center">
+                      <svg
+                        width={'18px'}
+                        viewBox="0 0 1024 1024"
+                        fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true"
+                      >
+                        <path d="M176.23 888.973c-34.712 0-65.419-7.418-92.12-22.253-26.405-14.835-47.024-35.309-61.858-61.414-14.834-26.406-22.251-56.813-22.251-91.232 0-34.413 7.417-64.826 22.251-91.228 14.834-26.404 35.454-47.024 61.858-61.858 26.701-14.834 57.408-22.252 92.12-22.252h671.54c34.714 0 65.274 7.418 91.674 22.252 26.701 14.834 47.469 35.453 62.304 61.858 14.835 26.403 22.253 56.815 22.253 91.228 0 34.419-7.418 64.826-22.253 91.232-14.835 26.106-35.603 46.579-62.304 61.414-26.4 14.835-56.96 22.253-91.674 22.253h-671.54zM176.23 477.768c-21.065 0-41.091 2.374-60.079 7.121-18.988 4.451-36.788 10.829-53.403 19.136l106.806-256.779c13.944-33.525 35.009-59.040 63.194-76.544 28.185-17.801 61.413-26.701 99.685-26.701h359.132c38.573 0 71.802 8.9 99.686 26.701 28.186 17.504 49.248 43.019 63.194 76.544l106.362 256.779c-34.118-17.504-71.795-26.257-113.037-26.257h-671.54zM783.245 714.963c0 16.026 5.632 29.523 16.909 40.499 11.571 10.976 25.216 16.467 40.941 16.467 15.43 0 28.781-5.491 40.051-16.467 11.277-11.27 16.915-24.774 16.915-40.499 0-15.424-5.638-28.774-16.915-40.051-11.27-11.571-24.621-17.357-40.051-17.357-15.725 0-29.37 5.786-40.941 17.357-11.277 11.277-16.909 24.627-16.909 40.051z"></path>
+                      </svg>
+                    </div>
+                    <hr />
+                    <div className="col-10">
+                      <p
+                        className="mt-4 text-semibold"
+                        style={{ fontSize: '20px' }}
+                      >
+                        100% network and power uptime SLAs
+                      </p>
+                      <p style={{ fontSize: '15px', marginTop: '-12px' }}>
+                        Get both 100% guaranteed power and network uptime
+                        assurance for all major routing devices within the
+                        network.
+                      </p>
+                    </div>
+                    <div className="col-2 text-center d-flex align-items-center justify-content-center">
+                      <svg
+                        width={'18px'}
+                        viewBox="0 0 8 8"
+                        fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true"
+                      >
+                        <path d="M4 0l-4 3h1v4h2v-2h2v2h2v-4.03l1 .03-4-3z"></path>
+                      </svg>
+                    </div>
+                    <hr />
+                    <div className="col-10">
+                      <p
+                        className="mt-4 text-semibold"
+                        style={{ fontSize: '20px' }}
+                      >
+                        Dedicated IP address
+                      </p>
+                      <p style={{ fontSize: '15px', marginTop: '-12px' }}>
+                        Enhance performance, speed, and protection for your
+                        websites from a secure dedicated IP address.
+                      </p>
+                    </div>
+                    <div className="col-2 text-center d-flex align-items-center justify-content-center">
+                      <svg
+                        width={'18px'}
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true"
+                      >
+                        <polyline points="16 18 22 12 16 6"></polyline>
+                        <polyline points="8 6 2 12 8 18"></polyline>
+                      </svg>
+                    </div>
+                    <hr />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

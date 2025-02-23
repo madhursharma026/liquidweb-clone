@@ -28,7 +28,7 @@ export default function Section1() {
     <div className="p-0">
       <div className={styles.contentContainer}>
         <div className={CommonStyle.ContainerWidth}>
-          <div className="row">
+          <div className="row mt-5">
             {/* Left Column */}
             <div className="col-md-6">
               <span
@@ -81,7 +81,7 @@ export default function Section1() {
               </div>
             </div>
             {/* Right Column */}
-            <div className="col-md-6 mt-md-0 mt-3 d-flex flex-column justify-content-center">
+            <div className="col-md-6 mt-md-0 mt-5 d-flex flex-column justify-content-center">
               <div className="d-flex align-items-center justify-content-center w-100">
                 <video
                   autoPlay
@@ -90,7 +90,7 @@ export default function Section1() {
                   playsInline
                   width={700}
                   height={500}
-                  className="img-fluid"
+                  className="img-fluid p-lg-5"
                 >
                   <source
                     src="/wordpressHostingSection1Video.mp4"
