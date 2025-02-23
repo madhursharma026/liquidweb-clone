@@ -40,7 +40,7 @@ export default function Section1() {
               <h1 className={`${styles.mainHeading} mt-4`}>
                 <span
                   className="px-2 rounded border"
-                  style={{ background: '#F5F4FF' }}
+                  style={{ background: '#F5F4FF', whiteSpace: 'nowrap' }}
                 >
                   High-performance
                 </span>{' '}

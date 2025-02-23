@@ -10,7 +10,7 @@ export default function Section5() {
       }}
     >
       <div className={`${CommonStyle.ContainerWidth} my-5 py-lg-5`}>
-        <div className="row p-md-5 p-3">
+        <div className="row p-md-5">
           {/* Left Section */}
           <div className="col-lg-6 d-flex align-items-center">
             <p className={`${Styles.mainHeading} mt-md-5 mt-3 fs-1`}>
