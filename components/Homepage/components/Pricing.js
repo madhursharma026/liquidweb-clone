@@ -3,19 +3,7 @@ import styles from '../../../styles/Homepage/Homepage.module.css'
 const Pricing = ({ offers, cardTitle, price, buttonText, darkORLightBG }) => {
   return (
     <>
-      <div
-        className={`card shadow-sm p-4 h-100 ${
-          darkORLightBG === 'dark' ? 'bg-dark' : 'bg-light'
-        } ${darkORLightBG === 'dark' ? 'text-white' : 'text-dark'} border-0`}
-        style={{
-          backgroundImage:
-            darkORLightBG === 'dark'
-              ? "url('https://i.gifer.com/7plc.gif')"
-              : undefined,
-          backgroundSize: darkORLightBG === 'dark' ? 'cover' : undefined,
-          backgroundPosition: darkORLightBG === 'dark' ? 'center' : undefined,
-        }}
-      >
+      <div className={`card shadow-sm p-4 h-100 border-0 bg-light`}>
         <span
           className="text-primary fw-semibold mb-2 text-end"
           style={{ fontSize: '0.8rem' }}
@@ -35,23 +23,13 @@ const Pricing = ({ offers, cardTitle, price, buttonText, darkORLightBG }) => {
         <h2 className="fw-semibold lh-1">
           <span>${price}</span>/mo
         </h2>
-        {darkORLightBG !== 'dark' ? (
-          <button
-            className={`rounded-pill mt-3 ${styles.customButton}`}
-            style={{ padding: '5px 10px', fontSize: '15px' }}
-          >
-            Explore {buttonText} metal{' '}
-            <span className={styles.hiddenArrow}>→</span>
-          </button>
-        ) : (
-          <button
-            className={`rounded-pill mt-3 btn btn-light`}
-            style={{ padding: '5px 10px', fontSize: '15px' }}
-          >
-            Explore {buttonText} metal{' '}
-            <span className={styles.hiddenArrow}>→</span>
-          </button>
-        )}
+        <button
+          className={`rounded-pill mt-3 ${styles.customButton}`}
+          style={{ padding: '5px 10px', fontSize: '15px' }}
+        >
+          Explore {buttonText} metal{' '}
+          <span className={styles.hiddenArrow}>→</span>
+        </button>
         {darkORLightBG !== 'dark' ? (
           <ul className="list-unstyled mt-3">
             <li className="mb-2" style={{ fontSize: '14px' }}>

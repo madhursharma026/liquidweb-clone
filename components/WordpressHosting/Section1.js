@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import CommonStyle from '../../styles/commomStyle.module.css'
 import styles from '../../styles/VpsHosting/VpsHosting.module.css'
 
@@ -84,13 +83,21 @@ export default function Section1() {
             {/* Right Column */}
             <div className="col-md-6 mt-md-0 mt-3 d-flex flex-column justify-content-center">
               <div className="d-flex align-items-center justify-content-center w-100">
-                <Image
-                  src="/wordpresshosting.png"
-                  alt="Wordpress Hosting"
+                <video
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
                   width={700}
                   height={500}
                   className="img-fluid"
-                />
+                >
+                  <source
+                    src="/wordpressHostingSection1Video.mp4"
+                    type="video/mp4"
+                  />
+                  Your browser does not support the video tag.
+                </video>
               </div>
             </div>
           </div>

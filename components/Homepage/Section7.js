@@ -4,7 +4,7 @@ import styles from '../../styles/Homepage/Homepage.module.css'
 const Section7 = () => {
   return (
     <div className={CommonStyle.ContainerWidth}>
-      <div className={styles.videoBackground2}>
+      <div className={`${styles.videoBackground2} rounded-4`}>
         <video className={styles.video2} autoPlay loop muted playsInline>
           <source
             src="https://www.liquidweb.com/wp-content/uploads/2024/10/AdobeStock_705424691_more_compressed_crunch.webm"
@@ -23,7 +23,12 @@ const Section7 = () => {
                     style={{ fontSize: '2.5rem', lineHeight: '70px' }}
                   >
                     Get started with{' '}
-                    <span className="border rounded px-2">Liquid Web</span>
+                    <span
+                      className="border rounded px-2"
+                      style={{ whiteSpace: 'nowrap' }}
+                    >
+                      Liquid Web
+                    </span>
                   </h1>
                 </div>
               </div>

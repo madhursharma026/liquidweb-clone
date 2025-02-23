@@ -25,6 +25,18 @@
 }
 
 .videoBackground {
+  padding-top: 100px;
+}
+
+
+@media (max-width: 992px) {
+
+  .videoBackground {
+    padding-top: 70px;
+  }
+}
+
+.videoBackground {
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
 }
@@ -67,21 +79,17 @@
 /* Content Container */
 .contentContainer {
   padding: 80px 0;
-  background: linear-gradient(
-    90deg,
-    rgb(125, 151, 167) 0%,
-    rgb(125, 151, 167) 44%,
-    rgba(125, 151, 167, 0) 61%
-  );
+  background: linear-gradient(90deg,
+      rgb(125, 151, 167) 0%,
+      rgb(125, 151, 167) 44%,
+      rgba(125, 151, 167, 0) 61%);
 }
 
 .contentContainer2 {
-  background: linear-gradient(
-    90deg,
-    rgb(26, 49, 74) 0%,
-    rgb(36, 68, 103) 33%,
-    rgba(36, 68, 103, 0.6) 100%
-  );
+  background: linear-gradient(90deg,
+      rgb(26, 49, 74) 0%,
+      rgb(36, 68, 103) 33%,
+      rgba(36, 68, 103, 0.6) 100%);
 }
 
 @media (min-width: 1025px) {
@@ -125,4 +133,3 @@
   text-align: center;
   font-weight: bold;
 }
-  
