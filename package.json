@@ -1,0 +1,20 @@
+{
+  "name": "liquid-web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "framer-motion": "^12.4.7",
+    "next": "15.1.7",
+    "react": "^19.0.0",
+    "react-bootstrap": "^2.10.9",
+    "react-dom": "^19.0.0",
+    "typewriter-effect": "^2.21.0"
+  }
+}

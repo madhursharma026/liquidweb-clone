@@ -1,0 +1,128 @@
+/* General Styling */
+.hiddenArrow {
+  display: inline-block;
+  opacity: 0;
+  transform: translateX(0);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.customButton:hover .hiddenArrow,
+.customButtonWhite:hover .hiddenArrow {
+  opacity: 1;
+  transform: translateX(5px);
+}
+
+/* Video Background */
+.videoBackground,
+.videoBackground2 {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  /* border-radius: 30px; */
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+.videoBackground {
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.videoBackground .video,
+.videoBackground2 .video2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: auto;
+  height: auto;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+}
+
+.content,
+.content2 {
+  position: relative;
+  z-index: 1;
+}
+
+/* Buttons */
+.customButton {
+  color: white;
+  cursor: pointer;
+  padding: 10px 20px;
+  border: 1px solid black;
+  background-color: black;
+  border-radius: 4px;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.customButton:hover {
+  color: black;
+  background-color: white;
+}
+
+/* Content Container */
+.contentContainer {
+  padding: 80px 0;
+  background: linear-gradient(
+    90deg,
+    rgb(125, 151, 167) 0%,
+    rgb(125, 151, 167) 44%,
+    rgba(125, 151, 167, 0) 61%
+  );
+}
+
+.contentContainer2 {
+  background: linear-gradient(
+    90deg,
+    rgb(26, 49, 74) 0%,
+    rgb(36, 68, 103) 33%,
+    rgba(36, 68, 103, 0.6) 100%
+  );
+}
+
+@media (min-width: 1025px) {
+  .contentContainer {
+    padding-top: 140px;
+  }
+}
+
+/* Logo */
+.logoImg {
+  width: auto;
+  height: auto;
+  max-height: 25px;
+}
+
+/* Circular Elements */
+.circleWrapper {
+  background: linear-gradient(145deg, #ffdde1, #eeffdb);
+  border-radius: 20px;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: transparent;
+  border: 5px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.circleText {
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: bold;
+}
+  

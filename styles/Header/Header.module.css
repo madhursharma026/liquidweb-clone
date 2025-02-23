@@ -1,0 +1,56 @@
+.headerContainerBefore1280PX {
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    letter-spacing: 0.02em;
+}
+
+.navbarVisible {
+    transform: translateY(0);
+}
+
+.navbarHidden {
+    transform: translateY(-100%);
+}
+
+.announcementBar {
+    margin: 0;
+    background-color: black;
+    padding: 6px;
+    text-align: center;
+    color: white;
+    font-size: 13px;
+}
+
+.shopButton {
+    border-radius: 5px;
+    padding: 1px 6px;
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+/* Always Sticky for smaller screens */
+.headerContainerAfter1280PX {
+    display: none;
+    position: fixed;
+    background-color: #1F242A;
+    z-index: 1000;
+    width: 100%;
+    letter-spacing: 0.02em;
+}
+
+@media (max-width: 1279px) {
+    .headerContainerBefore1280PX {
+        display: none;
+    }
+
+    .headerContainerAfter1280PX {
+        display: block;
+    }
+}
