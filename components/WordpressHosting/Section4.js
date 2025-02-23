@@ -85,11 +85,11 @@ export default function Section4() {
             <div className="col-md-6">
               <h1
                 className="fw-normal mt-3"
-                style={{ fontSize: '45px', lineHeight: '70px' }}
+                style={{ fontSize: '45px', lineHeight: '60px' }}
               >
                 Why Liquid Web for{' '}
                 <span
-                  className="px-2 rounded border"
+                  className="px-2 py-0 rounded border"
                   style={{ background: '#F5F4FF' }}
                 >
                   WordPress{' '}
@@ -99,7 +99,7 @@ export default function Section4() {
               <button
                 className={`rounded-pill text-center mt-4 ${Styles.customButton}`}
               >
-                Explore Managed WordPress →
+                Explore Managed WordPress
               </button>
             </div>
             <div className="col-md-6 mt-md-0 mt-5">

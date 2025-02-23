@@ -20,7 +20,7 @@ const Section7 = () => {
                 <div style={{ maxWidth: '400px' }}>
                   <h1
                     className="fw-normal text-white"
-                    style={{ fontSize: '2.5rem', lineHeight: '70px' }}
+                    style={{ fontSize: '2.5rem', lineHeight: '60px' }}
                   >
                     Get started with{' '}
                     <span

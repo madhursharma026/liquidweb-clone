@@ -18,7 +18,7 @@ export default function Section5() {
               <br className="d-lg-block d-none" />{' '}
               <span
                 className="px-2 rounded border"
-                style={{ background: '#F5F4FF' }}
+                style={{ background: '#F5F4FF', whiteSpace: 'nowrap' }}
               >
                 hosting solution
               </span>

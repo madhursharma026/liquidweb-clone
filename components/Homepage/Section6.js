@@ -6,7 +6,10 @@ const Section6 = () => {
     <div className={`my-5 py-5 ${CommonStyle.ContainerWidth}`}>
       <div className="row mt-5">
         <div className="col-md-5">
-          <p className="fw-normal lh-2" style={{ fontSize: '42px' }}>
+          <p
+            className="fw-normal"
+            style={{ fontSize: '42px', lineHeight: '55px' }}
+          >
             Web hosting services that help your business thrive
           </p>
         </div>

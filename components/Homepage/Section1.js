@@ -149,7 +149,7 @@ export default function Section1() {
               {/* Right Content - Offer */}
               <div className="col-md-6 mt-md-0 mt-3 d-flex justify-content-center align-items-end">
                 <div
-                  className="text-white py-4 px-5 rounded-3"
+                  className="text-white py-sm-4 px-sm-5 p-3 rounded-3"
                   style={{
                     background: 'linear-gradient(135deg, #5A67D8, #6B46C1)',
                     width: '400px',

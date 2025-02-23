@@ -101,7 +101,7 @@ const Section4 = () => {
             <div className="col-lg-6 offset-lg-1 mt-lg-0">
               <p
                 style={{ fontSize: 'calc(4vw + 2vh + 2vmin)' }}
-                className="fw-lighter d-lg-none d-block mt-5"
+                className="fw-normal d-lg-none d-block mt-5"
               >
                 180K+
               </p>
