@@ -14,7 +14,7 @@ export default function Section5() {
           <div className="col-lg-4 col-md-6 mb-4 mb-lg-0 d-flex">
             <div className="flex-fill">
               <img
-                src="https://www.liquidweb.com/wp-content/uploads/2024/08/farm-image2.webp"
+                src="/AmpleHarvestImage.png"
                 alt="A thriving farm supported by VPS hosting"
                 className="rounded-4 w-100 h-100 d-block"
               />

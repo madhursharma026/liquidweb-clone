@@ -6,10 +6,7 @@ const Section7New = () => {
     <div className={`${CommonStyle.ContainerWidth} py-5`}>
       <div className={styles.videoBackground2}>
         <video className={styles.video2} autoPlay loop muted playsInline>
-          <source
-            src="https://www.liquidweb.com/wp-content/uploads/2024/09/Cloud-small.webm"
-            type="video/mp4"
-          />
+          <source src="/cloudVideo.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <div className={styles.content2}>
@@ -373,7 +370,7 @@ const Section7New = () => {
               >
                 <div style={{ maxWidth: '450px', margin: 'auto' }}>
                   <img
-                    src="https://www.liquidweb.com/wp-content/uploads/2024/08/vps-hero-4.webp"
+                    src="/flexibilityAndScalability.png"
                     alt="#ImgNotFound"
                     className="w-100 rounded-3"
                   />
@@ -385,7 +382,7 @@ const Section7New = () => {
           <div className="d-lg-none d-block">
             <div style={{ maxWidth: '250px', margin: 'auto' }}>
               <img
-                src="https://www.liquidweb.com/wp-content/uploads/2024/08/vps-hero-4.webp"
+                src="/flexibilityAndScalability.png"
                 alt="#ImgNotFound"
                 className="w-100 rounded-3"
               />

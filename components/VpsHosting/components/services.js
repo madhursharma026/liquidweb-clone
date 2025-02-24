@@ -64,7 +64,7 @@ const Services = ({
                 }`}
               ></div>
               <video
-                src="https://www.liquidweb.com/wp-content/uploads/2024/09/iStock-2012925910-resized.webm"
+                src="/scalability.mp4"
                 autoPlay
                 loop
                 muted

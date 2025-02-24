@@ -25,34 +25,6 @@ const Section4 = () => {
                 hosting landscape—we set the standard. With our deep technical
                 expertise and innovative solutions, we’re a leader in the space.
               </p>
-
-              {/* <div
-                className="card bg-dark text-white p-sm-4 p-2 mt-5"
-                style={{
-                  background:
-                    'url(https://i.pinimg.com/originals/c9/0e/5c/c90e5cab1fd939143287a1f054afd2b6.gif)',
-                  backgroundSize: 'cover',
-                  backgroundPosition: 'center',
-                }}
-              >
-                <div className="card-body">
-                  <div className="text-end mb-3">
-                    <span
-                      className="border px-2 py-1 rounded"
-                      style={{ fontSize: '10px', letterSpacing: '1.4px' }}
-                    >
-                      Our Latest Webinar
-                    </span>
-                  </div>
-                  <p className="fs-2 lh-1">Cloud IN</p>
-                  <p className="text-end fs-2 lh-1">THE AGE</p>
-                  <p className="text-center fs-2 lh-1">OF AI</p>
-                </div>
-              </div>
-
-              <p className="fs-6 fw-semibold mt-3">
-                Navigating SEO’s evolution in the AI era
-              </p> */}
             </div>
 
             <div className="col-lg-6 offset-lg-1 d-lg-block d-none">
@@ -72,8 +44,7 @@ const Section4 = () => {
               <div
                 className="card bg-dark text-white p-sm-4 p-2"
                 style={{
-                  background:
-                    'url(https://i.pinimg.com/originals/c9/0e/5c/c90e5cab1fd939143287a1f054afd2b6.gif)',
+                  background: 'url(/Cloudintheageofai.gif)',
                   backgroundSize: 'cover',
                   backgroundPosition: 'center',
                 }}

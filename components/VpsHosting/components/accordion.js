@@ -23,7 +23,7 @@ export default function Accordion({ title, content, buttonText }) {
           {/* Toggle Button */}
           <button
             type="button"
-            className={`btn ${isOpen ? styles.closeBtn : styles.openBtn}`}
+            className={`btn ${isOpen ? styles.closeBtn : styles.openBtn} ps-3`}
             onClick={(e) => {
               e.stopPropagation()
               handleToggle()

@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import CommonStyle from '../../styles/commomStyle.module.css'
 import styles from '../../styles/VpsHosting/VpsHosting.module.css'
 
@@ -82,18 +83,29 @@ export default function Section1() {
           </div>
           <div className="col-md-6 mt-md-0 mt-3 d-flex flex-column justify-content-center">
             <div className="d-flex align-items-center justify-content-center w-100">
-              <video
-                autoPlay
-                loop
-                muted
-                playsInline
-                width={700}
-                height={500}
-                className="img-fluid p-lg-5"
-              >
-                <source src="/homepageSection1Video.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
+              <div className="p-lg-5">
+                <video
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  width={700}
+                  height={500}
+                  className="img-fluid"
+                >
+                  <source src="/homepageSection1Video.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+                <div className="text-md-end text-center">
+                  <Image
+                    src="/trustpilotImage.png"
+                    alt="#ImgNotFound"
+                    width={240}
+                    height={20}
+                    className="img-fluid"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>

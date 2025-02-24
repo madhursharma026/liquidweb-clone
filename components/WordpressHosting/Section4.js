@@ -40,7 +40,7 @@ export default function Section4() {
           <div
             className="h-100 rounded-4"
             style={{
-              backgroundImage: `url("https://revival-strapi.s3.eu-west-2.amazonaws.com/Header_0313f83cf9.jpg")`,
+              backgroundImage: `url("/WordPressSupportImage.jpg")`,
               backgroundRepeat: 'no-repeat',
               backgroundSize: 'cover',
             }}

@@ -7,10 +7,7 @@ export default function Section5() {
       {/* Video Background Section */}
       <div className={Styles.videoBackground2}>
         <video className={Styles.video2} autoPlay loop muted playsInline>
-          <source
-            src="https://www.liquidweb.com/wp-content/uploads/2024/09/Cloud-small.webm"
-            type="video/mp4"
-          />
+          <source src="/cloudVideo.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
@@ -57,17 +54,14 @@ export default function Section5() {
       {/* Customer Review Section */}
       <div className={`mt-5 ${Styles.videoBackground2} text-white`}>
         <img
-          src="https://www.liquidweb.com/wp-content/uploads/2024/08/illy-bg-1.png"
+          src="/brownColourImage.png"
           alt="Background Image"
           className={`w-100 ${Styles.video2}`}
         />
 
         <div className="row p-md-5 p-3">
           <div className="col-lg-8 p-3">
-            <img
-              src="https://www.liquidweb.com/wp-content/uploads/2024/09/5-stars.svg"
-              alt="5 Stars Rating"
-            />
+            <img src="/trustpilotStars.png" alt="5 Stars Rating" />
             <p className="mt-4 fs-3">Liquid Web is a synonym for excellence</p>
             <p>
               Hosting on Liquid Web has always been a delight. Been with these

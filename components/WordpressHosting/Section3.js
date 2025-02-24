@@ -33,7 +33,7 @@ export default function Section3() {
         <div className="col-md-6 d-flex flex-column justify-content-center offset-lg-2 mt-md-0 mt-3">
           <div className="d-flex align-items-center justify-content-center w-100">
             <img
-              src="https://www.liquidweb.com/wp-content/uploads/2024/10/kadence-ai-resized2.svg"
+              src="/kadenceAIResized2.png"
               alt="#ImgNotFound"
               className="w-100 rounded-4"
             />

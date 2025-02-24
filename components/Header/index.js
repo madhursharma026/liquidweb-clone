@@ -38,7 +38,7 @@ const Header = () => {
       <p className={`${style.announcementBar}`}>
         Get blazing-fast processing and unmatched efficiency with our GPU
         hosting—now 30% off.
-        <Link href="/shop" className={`btn mx-2 ${style.shopButton}`}>
+        <Link href="#" className={`btn mx-2 ${style.shopButton}`}>
           Shop now
         </Link>
         →
@@ -74,7 +74,7 @@ const Header = () => {
                 WordPress Hosting
               </Link>
               <Link
-                href="#SharedHosting"
+                href="sharedHosting"
                 className="px-3 text-decoration-none text-black"
               >
                 Shared Hosting
@@ -142,7 +142,7 @@ const Header = () => {
             </li>
             <li className="list-group-item">
               <Link
-                href="#SharedHosting"
+                href="sharedHosting"
                 className="text-decoration-none text-black fw-semibold"
               >
                 Shared Hosting

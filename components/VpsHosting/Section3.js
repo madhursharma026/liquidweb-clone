@@ -19,8 +19,7 @@ const sectionData = [
     description:
       'Our support team is available day and night, guaranteeing you get expert assistance and advice whenever you need it.',
     bgStyle: {
-      backgroundImage:
-        'url(https://www.liquidweb.com/wp-content/uploads/2024/08/wp-support-revised.webp)',
+      backgroundImage: 'url(/technicalSupport.png)',
       backgroundSize: 'cover',
       backgroundPosition: 'center',
     },
@@ -48,7 +47,7 @@ export default function Section3() {
         <div className="col-md-6 mt-md-0 mt-3 text-center text-white">
           <div className="position-relative">
             <img
-              src="https://www.liquidweb.com/wp-content/uploads/2024/11/panelsv3.svg"
+              src="/webPanel.png"
               alt="Control Panels"
               className="img-fluid rounded-3 w-100"
             />

@@ -1,8 +1,15 @@
+import { useState } from 'react'
 import CommonStyle from '../../styles/commomStyle.module.css'
 import Styles from '../../styles/Homepage/Homepage.module.css'
 import Pricing from './components/Pricing'
 
 const Section2 = () => {
+  const [showFeatures, setShowFeatures] = useState(false)
+
+  const toggleFeatures = () => {
+    setShowFeatures((prev) => !prev)
+  }
+
   const pricingData = [
     {
       offers: 'Up to 50% off 3 mos',
@@ -30,17 +37,6 @@ const Section2 = () => {
     },
   ]
 
-  const logos = [
-    'https://www.liquidweb.com/wp-content/uploads/2024/02/logo-gadget-gaurd.avif',
-    'https://www.liquidweb.com/wp-content/uploads/2024/10/MLB-white.svg',
-    'https://www.liquidweb.com/wp-content/uploads/2024/10/topps-white.svg',
-    'https://www.liquidweb.com/wp-content/uploads/2024/09/solidwp.svg',
-    'https://www.liquidweb.com/wp-content/uploads/2024/09/populi-lockup-1.svg',
-    'https://www.liquidweb.com/wp-content/uploads/2024/10/brightedge.avif',
-    'https://www.liquidweb.com/wp-content/uploads/2024/09/NC_State_University_brick_logo-1.svg',
-    'https://www.liquidweb.com/wp-content/uploads/2024/09/datamaas-logo-final-2-1.svg',
-  ]
-
   return (
     <div className={`${CommonStyle.ContainerWidth} my-5`}>
       <p className="fs-3">
@@ -53,7 +49,11 @@ const Section2 = () => {
       <div className="row justify-content-center">
         {pricingData.map((item, index) => (
           <div key={index} className="col-lg-4 col-md-6 mt-3">
-            <Pricing {...item} />
+            <Pricing
+              {...item}
+              showFeatures={showFeatures}
+              toggleFeatures={toggleFeatures}
+            />
           </div>
         ))}
       </div>
@@ -64,15 +64,62 @@ const Section2 = () => {
 
       <div className="mb-5">
         <div className="row justify-content-center align-items-center">
-          {logos.map((logo, index) => (
-            <div key={index} className="col-lg col-md-3 col-4 mt-5 text-center">
-              <img
-                src={logo}
-                alt="Company Logo"
-                className={`img-fluid ${Styles.logoImg}`}
-              />
-            </div>
-          ))}
+          <div className={`col-lg col-md-3 col-4 pt-5 text-center`}>
+            <img
+              src={'/logo1.png'}
+              alt="Company Logo"
+              className={`img-fluid ${Styles.logoImg}`}
+            />
+          </div>
+          <div className={`col-lg col-md-3 col-4 pt-5 text-center`}>
+            <img
+              src={'/logo2.png'}
+              alt="Company Logo"
+              className={`img-fluid ${Styles.logoImg}`}
+            />
+          </div>
+          <div className={`col-lg col-md-3 col-4 pt-5 text-center`}>
+            <img
+              src={'/logo3.png'}
+              alt="Company Logo"
+              className={`img-fluid ${Styles.logoImg}`}
+            />
+          </div>
+          <div className={`col-lg col-md-3 col-4 pt-5 text-center`}>
+            <img
+              src={'/logo4.png'}
+              alt="Company Logo"
+              className={`img-fluid ${Styles.logoImg}`}
+            />
+          </div>
+          <div className={`col-lg col-md-3 col-4 pt-5 text-center`}>
+            <img
+              src={'/logo5.png'}
+              alt="Company Logo"
+              className={`img-fluid ${Styles.logoImg}`}
+            />
+          </div>
+          <div className={`col-lg col-md-3 col-4 pt-5 text-center`}>
+            <img
+              src={'/logo6.png'}
+              alt="Company Logo"
+              className={`img-fluid ${Styles.logoImg}`}
+            />
+          </div>
+          <div className={`col-lg col-md-3 col-4 pt-5 text-center`}>
+            <img
+              src={'/logo7.png'}
+              alt="Company Logo"
+              className={`img-fluid ${Styles.logoImg}`}
+            />
+          </div>
+          <div className={`col-lg col-md-3 col-4 pt-5 text-center`}>
+            <img
+              src={'/logo8.png'}
+              alt="Company Logo"
+              className={`img-fluid ${Styles.logoImg}`}
+            />
+          </div>
         </div>
       </div>
     </div>

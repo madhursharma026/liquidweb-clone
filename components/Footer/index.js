@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import Styles from '../../styles/Footer/Footer.module.css'
 import CommonStyle from '../../styles/commomStyle.module.css'
 
@@ -7,9 +8,24 @@ const Footer = () => {
       <hr />
       <h5 className="pt-3 text-center">Related hosting content</h5>
       <div className="d-flex justify-content-center w-100 mt-4 pb-3">
-        <h6 className={`px-3`}>VPS Hosting Plans</h6>
-        <h6 className={`px-3`}>Wordpress Hosting</h6>
-        <h6 className={`px-3`}>All Hosting</h6>
+        <Link
+          href="/vpshosting"
+          className="text-decoration-none fs-6 text-black px-3"
+        >
+          VPS Hosting Plans
+        </Link>
+        <Link
+          href="/wordpresshosting"
+          className="text-decoration-none fs-6 text-black px-3"
+        >
+          Wordpress Hosting
+        </Link>
+        <Link
+          href="/sharedHosting"
+          className="text-decoration-none fs-6 text-black px-3"
+        >
+          Shared Hosting
+        </Link>
       </div>
       <hr />
 
@@ -18,63 +34,49 @@ const Footer = () => {
           <div className="row justify-content-center align-items-center">
             <div className="col-xl col-lg-2 col-md-3 col-sm-4 col-6 mt-5 text-center">
               <img
-                src={
-                  'https://www.liquidweb.com/wp-content/uploads/2024/05/HIPAA.png'
-                }
+                src={'/FooterLogo1.png'}
                 alt="Company Logo"
                 className={`img-fluid ${Styles.logoImg}`}
               />
             </div>
             <div className="col-xl col-lg-2 col-md-3 col-sm-4 col-6 mt-5 text-center">
               <img
-                src={
-                  'https://www.liquidweb.com/wp-content/uploads/2024/05/RedHat.png'
-                }
+                src={'/FooterLogo2.png'}
                 alt="Company Logo"
                 className={`img-fluid ${Styles.logoImg}`}
               />
             </div>
             <div className="col-xl col-lg-2 col-md-3 col-sm-4 col-6 mt-5 text-center">
               <img
-                src={
-                  'https://www.liquidweb.com/wp-content/uploads/2024/05/cPanel-U.png'
-                }
+                src={'/FooterLogo3.png'}
                 alt="Company Logo"
                 className={`img-fluid ${Styles.logoImg}`}
               />
             </div>
             <div className="col-xl col-lg-2 col-md-3 col-sm-4 col-6 mt-5 text-center">
               <img
-                src={
-                  'https://www.liquidweb.com/wp-content/uploads/2024/05/SSAE-16.png'
-                }
+                src={'/FooterLogo4.png'}
                 alt="Company Logo"
                 className={`img-fluid ${Styles.logoImg}`}
               />
             </div>
             <div className="col-xl col-lg-2 col-md-3 col-sm-4 col-6 mt-5 text-center">
               <img
-                src={
-                  'https://www.liquidweb.com/wp-content/uploads/2024/05/CCNA.png'
-                }
+                src={'/FooterLogo5.png'}
                 alt="Company Logo"
                 className={`img-fluid ${Styles.logoImg}`}
               />
             </div>
             <div className="col-xl col-lg-2 col-md-3 col-sm-4 col-6 mt-5 text-center">
               <img
-                src={
-                  'https://www.liquidweb.com/wp-content/uploads/2024/05/Microsoft-Partner.png'
-                }
+                src={'/FooterLogo6.png'}
                 alt="Company Logo"
                 className={`img-fluid ${Styles.logoImg}`}
               />
             </div>
             <div className="col-xl col-lg-2 col-md-3 col-sm-4 col-6 mt-5 text-center">
               <img
-                src={
-                  'https://www.liquidweb.com/wp-content/uploads/2024/05/AICPA.png'
-                }
+                src={'/FooterLogo7.png'}
                 alt="Company Logo"
                 className={`img-fluid ${Styles.logoImg}`}
               />
@@ -83,25 +85,21 @@ const Footer = () => {
             <div className="col-xl col-lg-2 col-md-3 col-sm-4 col-6 mt-5 text-center"></div>
             <div className="col-xl col-lg-2 col-md-3 col-sm-4 col-6 mt-5 text-center">
               <img
-                src={
-                  'https://hostadvice.com/awards/2025-best-dedicated-hosting-provider.png'
-                }
+                src={'/FooterLogo8.png'}
                 alt="Company Logo"
                 className={`img-fluid ${Styles.logoImg}`}
               />
             </div>
             <div className="col-xl col-lg-2 col-md-3 col-sm-4 col-6 mt-5 text-center">
               <img
-                src={'https://hostadvice.com/awards/2025-excellent-service.png'}
+                src={'/FooterLogo9.png'}
                 alt="Company Logo"
                 className={`img-fluid ${Styles.logoImg}`}
               />
             </div>
             <div className="col-xl col-lg-2 col-md-3 col-sm-4 col-6 mt-5 text-center">
               <img
-                src={
-                  'https://www.liquidweb.com/wp-content/uploads/2024/05/bbb.png'
-                }
+                src={'/FooterLogo10.png'}
                 alt="Company Logo"
                 className={`img-fluid ${Styles.logoImg}`}
               />
@@ -117,16 +115,16 @@ const Footer = () => {
       <h6 className="mt-5">
         California Notice
         <img
-          src="https://www.liquidweb.com/wp-content/uploads/2024/05/privacyoptions-p-500.png"
+          src="/FooterLogo11.png"
           alt="#ImgNotFound"
           width="30px"
           className="mx-2"
         />
         Do not sell my info
         <img
-          src="https://www.liquidweb.com/wp-content/uploads/2025/01/usa-flag.svg"
+          src="/FooterLogo12.png"
           alt="#ImgNotFound"
-          width="30px"
+          width="20px"
           className="mx-2"
         />
         All prices are in USD

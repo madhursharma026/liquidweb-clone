@@ -39,23 +39,30 @@ const Section5 = () => {
         <div className="col-md-6 d-md-block d-none offset-md-1">
           <div className="d-flex align-items-center h-100">
             <div className="row">
-              {[
-                'https://www.liquidweb.com/wp-content/uploads/2024/10/AdobeStock_965548416-resized.webm',
-                'https://www.liquidweb.com/wp-content/uploads/2024/10/AdobeStock_607994846_resized-2.webm',
-              ].map((src, index) => (
-                <div key={index} className="col-6">
-                  <video
-                    className="w-100 rounded-pill p-xxl-5 p-xl-4 p-lg-3 p-md-2"
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                  >
-                    <source src={src} type="video/mp4" />
-                    Your browser does not support the video tag.
-                  </video>
-                </div>
-              ))}
+              <div className="col-6">
+                <video
+                  className="w-100 rounded-pill p-xxl-5 p-xl-4 p-lg-3 p-md-2"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                >
+                  <source src={'/helpexpertvideo1.mp4'} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div className="col-6">
+                <video
+                  className="w-100 rounded-pill p-xxl-5 p-xl-4 p-lg-3 p-md-2"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                >
+                  <source src={'/helpexpertvideo2.mp4'} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
             </div>
           </div>
         </div>

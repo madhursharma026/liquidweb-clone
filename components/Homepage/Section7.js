@@ -6,10 +6,7 @@ const Section7 = () => {
     <div className={CommonStyle.ContainerWidth}>
       <div className={`${styles.videoBackground2} rounded-4`}>
         <video className={styles.video2} autoPlay loop muted playsInline>
-          <source
-            src="https://www.liquidweb.com/wp-content/uploads/2024/10/AdobeStock_705424691_more_compressed_crunch.webm"
-            type="video/mp4"
-          />
+          <source src="/lastSectionVideoBG.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
