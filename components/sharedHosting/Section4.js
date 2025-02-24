@@ -18,7 +18,7 @@ export default function Section4() {
               <h1>Build Your Perfect Website</h1>
               <p>
                 Create your dream website in minutes with our intuitive
-                SiteGround Site Builder and launch a stunning professional site
+                sleeknode Site Builder and launch a stunning professional site
                 complete with built-in SEO and easy content management.
               </p>
               <button

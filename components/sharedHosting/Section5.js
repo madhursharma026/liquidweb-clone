@@ -15,7 +15,7 @@ const icon = (
 const accordionData = [
   {
     title: 'Faster Website Performance',
-    subtitle: 'See 85% speed improvement on average after moving to SiteGround',
+    subtitle: 'See 85% speed improvement on average after moving to sleeknode',
     items: [
       {
         label: 'High-speed Google Cloud infrastructure',
@@ -79,7 +79,7 @@ const accordionData = [
       {
         label: 'Easy Site Builder',
         description:
-          'Create and manage a stunning website with ease, using professional templates, built-in SEO features, and an AI writer with the SiteGround Site Builder – included with your plan.',
+          'Create and manage a stunning website with ease, using professional templates, built-in SEO features, and an AI writer with the sleeknode Site Builder – included with your plan.',
       },
       {
         label: 'Intuitive Website Management Interfaces',

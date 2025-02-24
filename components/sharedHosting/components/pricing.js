@@ -76,7 +76,7 @@ const Pricing = ({
           <li>100% Renewable Energy Match</li>
           <li>30-Days Money-Back</li>
           <li>Collaborators Available</li>
-          <p className="fs-5 my-1 fw-semibold">SiteGround Site Builder</p>
+          <p className="fs-5 my-1 fw-semibold">sleeknode Site Builder</p>
           <li>Easy Site Building</li>
           <li>AI Content Generation</li>
           <li>Professional Templates</li>

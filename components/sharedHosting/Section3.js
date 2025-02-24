@@ -38,7 +38,7 @@ export default function Section3() {
           <div className="col-lg-3 col-sm-6 mt-3 d-flex flex-column">
             <h5>Launch Your Site with a Click</h5>
             <p>
-              Create your perfect website effortlessly with SiteGround Site
+              Create your perfect website effortlessly with sleeknode Site
               Builder or install WordPress for advanced functionality.
             </p>
             <h6
@@ -132,7 +132,7 @@ export default function Section3() {
           <h5 className="mt-3 fw-semibold">Launch Your Site with a Click</h5>
           <p style={{ fontSize: '14px' }}>
             Not sure how to start building your site? We have made it simple for
-            you - you can build a site effortlessly with the SiteGround Site
+            you - you can build a site effortlessly with the sleeknode Site
             Builder or install WordPress for more advanced functionality.
           </p>
           <p className="fw-semibold">
@@ -144,10 +144,10 @@ export default function Section3() {
             >
               <path d="M15.249,1.438a2,2,0,0,0-2.811.312l-6.6,8.256-2.42-2.42A2,2,0,0,0,.586,10.414l4,4c.026.026.057.045.084.069s.051.055.08.079.034.015.049.026a1.945,1.945,0,0,0,.519.286c.03.011.06.018.091.028A2.04,2.04,0,0,0,6,15H6a2.037,2.037,0,0,0,.411-.045c.042-.009.081-.025.123-.037a1.88,1.88,0,0,0,.271-.092c.049-.022.1-.05.143-.075a1.883,1.883,0,0,0,.221-.137,1.622,1.622,0,0,0,.138-.113c.035-.03.074-.054.107-.087s.052-.067.081-.1.046-.041.066-.066l8-10A2,2,0,0,0,15.249,1.438Z"></path>
             </svg>
-            SiteGround Site Builder
+            sleeknode Site Builder
           </p>
           <p style={{ fontSize: '14px', marginTop: '-10px' }}>
-            SiteGround Site Builder is designed to make website creation simple
+            sleeknode Site Builder is designed to make website creation simple
             and stress-free, perfect for beginners and first-time users. With
             its easy page editor, a wide variety of professional templates,
             built-in SEO tools, and an AI-powered content writer, it has
@@ -326,7 +326,7 @@ export default function Section3() {
           <p style={{ fontSize: '14px', marginTop: '-10px' }}>
             For clients migrating WordPress sites, we have made it easy to do it
             yourself. You just need to install our Migrator plugin on the site
-            you want to migrate, get a token from your SiteGround Site Tools and
+            you want to migrate, get a token from your sleeknode Site Tools and
             put it in the plugin. The Migrator will securely move all of your
             content while keeping your configuration intact. The best thing is
             that it’s completely free and you can use it for as many migrations

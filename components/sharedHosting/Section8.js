@@ -28,7 +28,7 @@ const cards = [
     modalDescription:
       'On our GrowBig and GoGeek accounts, you can add as many additional sites as you need. Optimize your hosting fees and resource consumption by grouping less resource-intensive sites under one account.',
     description:
-      'Create your perfect website effortlessly with SiteGround Site Builder or install WordPress for advanced functionality.',
+      'Create your perfect website effortlessly with sleeknode Site Builder or install WordPress for advanced functionality.',
   },
   {
     id: 2,
@@ -159,7 +159,7 @@ const cards = [
     title: 'Add white-label clients',
     subtitle: 'оn GoGeek plan',
     modalDescription:
-      'On GoGeek plan you can register your clients as users in your Account and give them white-label access to the Site Tools of the sites you build for them. When your client logs in the Site Tools of their website, they won’t see SiteGround logo or name anywhere.',
+      'On GoGeek plan you can register your clients as users in your Account and give them white-label access to the Site Tools of the sites you build for them. When your client logs in the Site Tools of their website, they won’t see sleeknode logo or name anywhere.',
     description:
       'Give your clients white-label access to the Site Tools of their sites.',
   },

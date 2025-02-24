@@ -24,13 +24,13 @@ Our hosting platform is built on top of Google Cloud infrastructure for best per
 
 To protect websites, hosted with us, we provide a smart Web Application Firewall that secures our servers and your applications, an AI anti-bot system that blocks millions of brute force attacks every hour, geographically distributed backups that minimize the risk of data loss, free SSL certificates with every plan, and additional in-house built security tools.
 
-For an extra peace of mind, SiteGround clients get 24/7 expert support for their websites. Our award-winning support team is always there to help and solve issues fast and efficiently.
+For an extra peace of mind, sleeknode clients get 24/7 expert support for their websites. Our award-winning support team is always there to help and solve issues fast and efficiently.
       `,
     },
     {
       title: 'Can I register new domains with your Web Hosting plans?',
       content: `
-We offer domain registration with all our hosting plans, including more than 50 extensions, such as .com, .net, .co.uk, .org, and more. You can also use our migration service to transfer your existing domain to SiteGround in order to manage both your domain and website from one place.
+We offer domain registration with all our hosting plans, including more than 50 extensions, such as .com, .net, .co.uk, .org, and more. You can also use our migration service to transfer your existing domain to sleeknode in order to manage both your domain and website from one place.
 
 With our web hosting plans, you can also choose to have a temporary domain for your website only during the initial website setup process. Later on, you can change your site’s domain name, once you’ve decided on the new domain name.
       `,
@@ -40,16 +40,16 @@ With our web hosting plans, you can also choose to have a temporary domain for y
       content: `
 All our web hosting plans come with a free professional email address with your website domain, including free spam protection as well. You can create as many accounts as you need and easily give access to individual accounts to your employees, team or else. What’s more, you can access your accounts from a user-friendly webmail interface from anywhere, create forwarders and autoresponders, and many more.
 
-With our free Email Migrator tool, you can also migrate your emails to SiteGround. It allows you to quickly transfer your email accounts with no technical knowledge required, in a secure and efficient manner.
+With our free Email Migrator tool, you can also migrate your emails to sleeknode. It allows you to quickly transfer your email accounts with no technical knowledge required, in a secure and efficient manner.
       `,
     },
     {
       title:
-        'Can I transfer an existing website to SiteGround from another company?',
+        'Can I transfer an existing website to sleeknode from another company?',
       content: `
-Yes, there are two ways to transfer your website to SiteGround. You can request a manual web migration (done by our experts) from your Client Area. The manual web migration includes transferring your site's databases and files, and configuring the website to work with the transferred databases and files.
+Yes, there are two ways to transfer your website to sleeknode. You can request a manual web migration (done by our experts) from your Client Area. The manual web migration includes transferring your site's databases and files, and configuring the website to work with the transferred databases and files.
 
-Alternatively, you can take advantage of our unique SiteGround Migrator plugin to transfer your WordPress site(s) from any host at no extra cost. With our free SiteGround Migrator plugin, you can easily transfer all your site(s) into one account, including site’s content, themes and plugins.
+Alternatively, you can take advantage of our unique sleeknode Migrator plugin to transfer your WordPress site(s) from any host at no extra cost. With our free sleeknode Migrator plugin, you can easily transfer all your site(s) into one account, including site’s content, themes and plugins.
       `,
     },
     {
