@@ -59,7 +59,7 @@ const Section2 = () => {
       </div>
 
       <p className="mt-5 fs-5">
-        187K brands—and counting—level up with Liquid Web
+        187K brands—and counting—level up with Sleeknode
       </p>
 
       <div className="mb-5">

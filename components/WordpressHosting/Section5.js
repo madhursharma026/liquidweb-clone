@@ -70,7 +70,7 @@ const Section5 = () => {
                     fontSize: '0.9rem',
                   }}
                 >
-                  WordPress runs better on Liquid Web
+                  WordPress runs better on Sleeknode
                 </span>
                 <blockquote className="mt-3 mb-0">
                   <p className="fs-5 fst-italic">

@@ -83,7 +83,7 @@ export default function Section3() {
         Virtual private server hosting is the best solution for those seeking
         dedicated resources, enhanced control, and scalability at a more
         affordable price than traditional dedicated servers. More brands than
-        ever are choosing Liquid Web for VPS hosting thanks to our exceptional
+        ever are choosing Sleeknode for VPS hosting thanks to our exceptional
         uptime and top-tier support that keeps them online and thriving.
       </p>
 
@@ -123,7 +123,7 @@ export default function Section3() {
       <Services
         title={'Lightning-fast VPS hosting'}
         description={
-          'Liquid Web is known for delivering the fastest Linux, Apache, MySQL, and PHP (LAMP) stack performance. A third-party analyst found that our VPS speed is faster than Rackspace, DigitalOcean, and Amazon.'
+          'Sleeknode is known for delivering the fastest Linux, Apache, MySQL, and PHP (LAMP) stack performance. A third-party analyst found that our VPS speed is faster than Rackspace, DigitalOcean, and Amazon.'
         }
         btnNeeded={true}
         btnText={'Explore Cloud VPS Hosting'}

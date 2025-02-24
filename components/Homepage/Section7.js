@@ -24,7 +24,7 @@ const Section7 = () => {
                       className="border rounded px-2"
                       style={{ whiteSpace: 'nowrap' }}
                     >
-                      Liquid Web
+                      Sleeknode
                     </span>
                   </h1>
                 </div>

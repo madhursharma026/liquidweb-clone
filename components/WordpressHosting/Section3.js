@@ -11,7 +11,7 @@ export default function Section3() {
               className="border px-2 py-1 rounded text-primary"
               style={{ letterSpacing: '1.4px', fontSize: '12px' }}
             >
-              Kadence: A Liquid Web brand
+              Kadence: A Sleeknode brand
             </span>
             <h1 className={`${styles.Heading} mt-4`}>
               Take your{' '}

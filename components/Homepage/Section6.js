@@ -46,7 +46,7 @@ const Section6 = () => {
       <Services
         title={'Easy web hosting migrations'}
         description={
-          'Switching to Liquid Web hosting is virtually seamless—our expert migration team is by your side at every step, ensuring a smooth website transition with minimal downtime. '
+          'Switching to Sleeknode hosting is virtually seamless—our expert migration team is by your side at every step, ensuring a smooth website transition with minimal downtime. '
         }
         btnText={'Learn About Our Process'}
         imageOrVideo={'video'}

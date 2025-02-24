@@ -57,10 +57,10 @@ export default function Section4() {
               <div className="p-md-5 p-4 text-white">
                 <p className="fs-2 pb-5">The best WordPress support</p>
                 <p className="mt-5 fs-5 pt-lg-5 pt-3">
-                  With Liquid Web WordPress hosting, you gain access to a team
-                  of WordPress experts who have experience with thousands of
-                  sites and are always ready to support you at every step of
-                  your journey.
+                  With Sleeknode WordPress hosting, you gain access to a team of
+                  WordPress experts who have experience with thousands of sites
+                  and are always ready to support you at every step of your
+                  journey.
                 </p>
               </div>
             </div>
@@ -87,7 +87,7 @@ export default function Section4() {
                 className="fw-normal mt-3"
                 style={{ fontSize: '45px', lineHeight: '60px' }}
               >
-                Why Liquid Web for{' '}
+                Why Sleeknode for{' '}
                 <span
                   className="px-2 py-0 rounded border"
                   style={{ background: '#F5F4FF' }}
@@ -118,8 +118,8 @@ export default function Section4() {
                   The fastest WordPress hosting
                 </h5>
                 <p className="fs-5">
-                  Liquid Web achieves the fastest WordPress speeds online
-                  through multi-layered caching with the latest PHP and server
+                  Sleeknode achieves the fastest WordPress speeds online through
+                  multi-layered caching with the latest PHP and server
                   technologies, an integrated CDN across data centers, and
                   advanced image compression techniques.
                 </p>
@@ -139,8 +139,8 @@ export default function Section4() {
                   The fastest WordPress hosting
                 </h5>
                 <p className="fs-5">
-                  Liquid Web achieves the fastest WordPress speeds online
-                  through multi-layered caching with the latest PHP and server
+                  Sleeknode achieves the fastest WordPress speeds online through
+                  multi-layered caching with the latest PHP and server
                   technologies, an integrated CDN across data centers, and
                   advanced image compression techniques.
                 </p>
@@ -160,8 +160,8 @@ export default function Section4() {
                   The fastest WordPress hosting
                 </h5>
                 <p className="fs-5">
-                  Liquid Web achieves the fastest WordPress speeds online
-                  through multi-layered caching with the latest PHP and server
+                  Sleeknode achieves the fastest WordPress speeds online through
+                  multi-layered caching with the latest PHP and server
                   technologies, an integrated CDN across data centers, and
                   advanced image compression techniques.
                 </p>

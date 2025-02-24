@@ -54,7 +54,7 @@ const Section7New = () => {
                         lineHeight: '1.5em',
                       }}
                     >
-                      Liquid Web achieves the fastest WordPress speeds online
+                      Sleeknode achieves the fastest WordPress speeds online
                       through multi-layered caching with the latest PHP and
                       server technologies, an integrated CDN across data
                       centers, and advanced image compression techniques.

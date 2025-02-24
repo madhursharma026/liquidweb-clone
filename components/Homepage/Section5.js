@@ -25,7 +25,7 @@ const Section5 = () => {
             </span>
           </p>
           <h5 className="fw-normal mt-5 pb-5" style={{ maxWidth: '450px' }}>
-            Liquid Web is famous for our 24/7 live support—let’s get started.
+            Sleeknode is famous for our 24/7 live support—let’s get started.
             Chat with an expert now to find the web hosting service that’s just
             right for you.
           </h5>

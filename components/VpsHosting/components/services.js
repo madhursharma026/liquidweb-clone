@@ -81,7 +81,7 @@ const Services = ({
                 { label: 'Rackspace', width: '25%' },
                 { label: 'DigitalOcean', width: '50%' },
                 { label: 'Amazon', width: '75%' },
-                { label: 'Liquid Web', width: '100%', black: true },
+                { label: 'Sleeknode', width: '100%', black: true },
               ].map(({ label, width, black }, index) => (
                 <div key={index} className={styles.barContainer}>
                   <span className={styles.label}>{label}</span>

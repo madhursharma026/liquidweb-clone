@@ -62,9 +62,9 @@ export default function Section5() {
         <div className="row p-md-5 p-3">
           <div className="col-lg-8 p-3">
             <img src="/trustpilotStars.png" alt="5 Stars Rating" />
-            <p className="mt-4 fs-3">Liquid Web is a synonym for excellence</p>
+            <p className="mt-4 fs-3">Sleeknode is a synonym for excellence</p>
             <p>
-              Hosting on Liquid Web has always been a delight. Been with these
+              Hosting on Sleeknode has always been a delight. Been with these
               folks for the past 9+ years, have used their Cloud and dedicated
               solutions. Unparalleled tech support round the clock, great server
               performance and uptime. Would highly recommend to everyone.

@@ -109,7 +109,7 @@ const Footer = () => {
       </div>
 
       <h6 className="mt-5">
-        Liquid Web, a <u>web hosting</u> company with 18 <u>data centers</u>{' '}
+        Sleeknode, a <u>web hosting</u> company with 18 <u>data centers</u>{' '}
         globally
       </h6>
       <h6 className="mt-5">
@@ -132,7 +132,7 @@ const Footer = () => {
       <h6 className="text-secondary mt-4">
         * Promotions may be exclusively available to new customers and cannot be
         applied to existing accounts. Qualification is at the sole discretion of
-        Liquid Web. Reach out with questions.
+        Sleeknode. Reach out with questions.
       </h6>
     </div>
   )

@@ -50,7 +50,7 @@ const Header = () => {
             className="fw-semibold text-decoration-none text-black"
             style={{ fontSize: '22px' }}
           >
-            Liquid Web
+            <img src="/MainLogo.png" alt="#ImgNotFound" width={'120'} />
           </Link>
 
           <Navbar.Toggle
@@ -62,19 +62,19 @@ const Header = () => {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto ms-4 d-lg-block d-none">
               <Link
-                href="vpshosting"
+                href="/vps-hosting"
                 className="px-3 text-decoration-none text-black"
               >
                 VPS Hosting Plans
               </Link>
               <Link
-                href="/wordpresshosting"
+                href="/wordpress-hosting"
                 className="px-3 text-decoration-none text-black"
               >
                 WordPress Hosting
               </Link>
               <Link
-                href="sharedHosting"
+                href="/web-hosting"
                 className="px-3 text-decoration-none text-black"
               >
                 Shared Hosting
@@ -99,7 +99,7 @@ const Header = () => {
               href="#Login"
               className="px-3 text-decoration-none btn btn-outline-dark"
             >
-              <i class="fa fa-sign-in fs-6" /> &nbsp; Login
+              <i className="fa fa-sign-in fs-6" /> &nbsp; Login
             </Link>
           </Navbar.Collapse>
         </Navbar>
@@ -113,20 +113,20 @@ const Header = () => {
       >
         <Offcanvas.Header closeButton>
           <Offcanvas.Title>
-            <Link
-              href="/"
-              className="fw-semibold text-decoration-none text-dark"
+            <img
+              src="/MainLogo.png"
+              alt="#ImgNotFound"
+              width={'120'}
               onClick={handleClose}
-            >
-              Liquid Web
-            </Link>
+              style={{ cursor: 'pointer' }}
+            />
           </Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
           <ul className="list-group list-group-flush">
             <li className="list-group-item">
               <Link
-                href="vpshosting"
+                href="/vps-hosting"
                 className="text-decoration-none text-black fw-semibold"
               >
                 VPS Hosting Plans
@@ -134,7 +134,7 @@ const Header = () => {
             </li>
             <li className="list-group-item">
               <Link
-                href="wordpresshosting"
+                href="/wordpress-hosting"
                 className="text-decoration-none text-black fw-semibold"
               >
                 WordPress Hosting
@@ -142,7 +142,7 @@ const Header = () => {
             </li>
             <li className="list-group-item">
               <Link
-                href="sharedHosting"
+                href="/web-hosting"
                 className="text-decoration-none text-black fw-semibold"
               >
                 Shared Hosting
@@ -169,7 +169,7 @@ const Header = () => {
                 href="#Login"
                 className="px-3 text-decoration-none btn btn-outline-dark w-100"
               >
-                <i class="fa fa-sign-in fs-6" /> &nbsp; Login
+                <i className="fa fa-sign-in fs-6" /> &nbsp; Login
               </Link>
             </li>
           </ul>

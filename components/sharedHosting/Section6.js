@@ -166,7 +166,7 @@ export default function Section6() {
               </div>
 
               <Link href={'#'} className="fs-5 text-decoration-none mt-5">
-                Learn more →
+                Explore Our Support →
               </Link>
             </div>
           </div>

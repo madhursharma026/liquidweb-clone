@@ -74,7 +74,7 @@ export default function Section1() {
           </svg>
           Promotions are valid for new accounts only and do not apply to
           upgrades of existing VPS servers. Please reach out to our team if
-          you’re upgrading your existing Liquid Web hardware.
+          you’re upgrading your existing Sleeknode hardware.
         </p>
       </div>
 

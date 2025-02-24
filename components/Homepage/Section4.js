@@ -21,7 +21,7 @@ const Section4 = () => {
                 className="mt-3 pb-lg-5"
                 style={{ fontSize: '17px', letterSpacing: '1.4px' }}
               >
-                At Liquid Web, we don’t just keep pace with the ever-evolving
+                At Sleeknode, we don’t just keep pace with the ever-evolving
                 hosting landscape—we set the standard. With our deep technical
                 expertise and innovative solutions, we’re a leader in the space.
               </p>
