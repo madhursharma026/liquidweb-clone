@@ -1,28 +1,3 @@
-.headerContainerBefore1280PX {
-    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    letter-spacing: 0.02em;
-}
-
-.navbarVisible {
-    transform: translateY(0);
-}
-
-.navbarHidden {
-    transform: translateY(-100%);
-}
-
-.navOptions {
-    border-bottom: 2px solid white;
-}
-
-.navOptions:hover {
-    border-bottom: 2px solid black;
-}
-
 .announcementBar {
     margin: 0;
     background-color: black;
@@ -41,25 +16,6 @@
     font-size: 14px;
     text-decoration: none;
     transition: 0.3s;
-}
-
-.headerContainerAfter1280PX {
-    display: none;
-    position: fixed;
-    background-color: #1F242A;
-    z-index: 1000;
-    width: 100%;
-    letter-spacing: 0.02em;
-}
-
-@media (max-width: 1279px) {
-    .headerContainerBefore1280PX {
-        display: none;
-    }
-
-    .headerContainerAfter1280PX {
-        display: block;
-    }
 }
 
 @media (max-width: 991px) {

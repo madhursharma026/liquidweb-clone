@@ -1,0 +1,24 @@
+.Heading,
+.mainHeading {
+    text-align: left;
+    line-height: 1.2;
+    letter-spacing: -1.5px;
+    font-family: 'FK Grotesk Neue', Arial, Helvetica, sans-serif;
+}
+
+.Heading {
+    font-size: 40px;
+}
+
+.mainHeading {
+    font-size: 50px;
+    max-width: 520px;
+}
+
+@media (max-width: 768px) {
+
+    .Heading,
+    .mainHeading {
+        font-size: 40px;
+    }
+}
