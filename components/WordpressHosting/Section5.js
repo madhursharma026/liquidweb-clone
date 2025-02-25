@@ -1,6 +1,6 @@
 import CommonStyle from '../../styles/commomStyle.module.css'
 
-const Section5 = () => {
+export default function Section5() {
   return (
     <div className={`${CommonStyle.ContainerWidth} mt-5 py-5`}>
       <section
@@ -28,10 +28,10 @@ const Section5 = () => {
           }}
         >
           <source src="/technicalSupport247Video.mp4" type="video/mp4" />
-          {/* Add a fallback for browsers that don't support video */}
+          {/* Fallback content */}
         </video>
 
-        {/* Dark Overlay for contrast */}
+        {/* Dark Overlay */}
         <div
           className="position-absolute top-0 start-0 w-100 h-100"
           style={{
@@ -47,7 +47,7 @@ const Section5 = () => {
         >
           <div className="row">
             <div className="col-lg-8">
-              {/* Left Column - Primary Info */}
+              {/* Primary Info */}
               <div className="mb-4">
                 <h1
                   className="fw-bold display-4 mb-0"
@@ -86,7 +86,7 @@ const Section5 = () => {
             <div className="col-lg-4"></div>
           </div>
 
-          {/* Bottom CTA Container */}
+          {/* Bottom CTA */}
           <div
             className="rounded-4 mt-auto p-3 p-md-4"
             style={{
@@ -116,5 +116,3 @@ const Section5 = () => {
     </div>
   )
 }
-
-export default Section5

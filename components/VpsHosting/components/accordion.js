@@ -10,7 +10,7 @@ export default function Accordion({ title, content, buttonText }) {
   }, [])
 
   return (
-    <div className={`container ${styles.customAccordion}`}>
+    <div className={`${styles.customAccordion}`}>
       <div className="border-bottom py-4">
         {/* Accordion Header */}
         <div

@@ -10,7 +10,7 @@ const Icon = ({ path }) => (
     xmlns="http://www.w3.org/2000/svg"
     aria-hidden="true"
   >
-    <path d={path}></path>
+    <path d={path} />
   </svg>
 )
 
@@ -42,7 +42,7 @@ export default function Section1() {
                 Ultra-fast{' '}
                 <span
                   className="px-2 rounded border"
-                  style={{ background: '#F5F4FF' }}
+                  style={{ background: '#F5F4FF', whiteSpace: 'nowrap' }}
                 >
                   WordPress
                 </span>{' '}
@@ -66,18 +66,37 @@ export default function Section1() {
                 </li>
               </ul>
               <p className="text-muted fw-normal fs-4">Starting at $5.25/mo</p>
-              <div>
+              <div style={{ display: 'flex', alignItems: 'center' }}>
                 <button
-                  className={`rounded-pill text-center mt-4 ${styles.customButton}`}
+                  className={`rounded-pill text-center ${styles.customButton}`}
+                  style={{ marginRight: '1rem' }}
                 >
-                  Explore Managed Wordpress{' '}
-                  <span className={styles.hiddenArrow}>→</span>
+                  Explore Managed WordPress
+                  <span className={styles.hiddenArrow}> →</span>
                 </button>
                 <button
-                  className={`rounded-pill bg-white text-black mt-4 ms-3 ${styles.customButton}`}
+                  className="rounded-pill bg-white text-black"
+                  style={{
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    padding: '0.5rem 1rem',
+                    border: '1px solid #000',
+                  }}
                 >
-                  Chat With An Expert{' '}
-                  <span className={styles.hiddenArrow}>→</span>
+                  <video
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    width="40"
+                    className="img-fluid rounded-circle me-2"
+                  >
+                    <source src="/chatWithAnExpertVideo.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                  <span style={{ marginRight: '0.25rem' }}>
+                    Chat with an expert
+                  </span>
                 </button>
               </div>
             </div>
@@ -103,7 +122,7 @@ export default function Section1() {
                   <div className="text-md-end text-center">
                     <Image
                       src="/trustpilotImage.png"
-                      alt="#ImgNotFound"
+                      alt="Trustpilot"
                       width={240}
                       height={20}
                       className="img-fluid"

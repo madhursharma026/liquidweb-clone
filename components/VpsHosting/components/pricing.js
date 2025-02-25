@@ -36,8 +36,8 @@ const Pricing = ({ offers, cardTitle, price, bestDeal }) => {
             Buy Now
           </button>
         </Link>
-        <ul className="list-unstyled mt-5">
-          <li>
+        <ul className="list-unstyled mt-3">
+          <li style={{ fontSize: '14px' }}>
             <svg
               width={'14px'}
               className="me-2"
@@ -50,7 +50,7 @@ const Pricing = ({ offers, cardTitle, price, bestDeal }) => {
             </svg>
             Self or fully managed
           </li>
-          <li>
+          <li style={{ fontSize: '14px' }}>
             <svg
               width={'14px'}
               className="me-2"
@@ -63,7 +63,7 @@ const Pricing = ({ offers, cardTitle, price, bestDeal }) => {
             </svg>
             1 vCPU
           </li>
-          <li>
+          <li style={{ fontSize: '14px' }}>
             <svg
               width={'14px'}
               className="me-2"
@@ -76,7 +76,7 @@ const Pricing = ({ offers, cardTitle, price, bestDeal }) => {
             </svg>
             1 GB RAM
           </li>
-          <li>
+          <li style={{ fontSize: '14px' }}>
             <svg
               width={'14px'}
               className="me-2"
@@ -89,7 +89,7 @@ const Pricing = ({ offers, cardTitle, price, bestDeal }) => {
             </svg>
             30 GB SSD
           </li>
-          <li>
+          <li style={{ fontSize: '14px' }}>
             <svg
               width={'14px'}
               className="me-2"
@@ -102,7 +102,7 @@ const Pricing = ({ offers, cardTitle, price, bestDeal }) => {
             </svg>
             1 TB bandwidth
           </li>
-          <li>
+          <li style={{ fontSize: '14px' }}>
             <svg
               width={'14px'}
               className="me-2"
@@ -115,7 +115,7 @@ const Pricing = ({ offers, cardTitle, price, bestDeal }) => {
             </svg>
             10 GB network
           </li>
-          <li>
+          <li style={{ fontSize: '14px' }}>
             <svg
               width={'14px'}
               className="me-2"
@@ -128,7 +128,7 @@ const Pricing = ({ offers, cardTitle, price, bestDeal }) => {
             </svg>
             Linux or Windows
           </li>
-          <li>
+          <li style={{ fontSize: '14px' }}>
             <svg
               width={'14px'}
               className="me-2"
@@ -141,7 +141,7 @@ const Pricing = ({ offers, cardTitle, price, bestDeal }) => {
             </svg>
             Interworx, cPanel, Plesk available
           </li>
-          <li>
+          <li style={{ fontSize: '14px' }}>
             <svg
               width={'14px'}
               className="me-2"
@@ -154,7 +154,7 @@ const Pricing = ({ offers, cardTitle, price, bestDeal }) => {
             </svg>
             Fast provisioning
           </li>
-          <li>
+          <li style={{ fontSize: '14px' }}>
             <svg
               width={'14px'}
               className="me-2"
@@ -167,7 +167,7 @@ const Pricing = ({ offers, cardTitle, price, bestDeal }) => {
             </svg>
             Robust API
           </li>
-          <li>
+          <li style={{ fontSize: '14px' }}>
             <svg
               width={'14px'}
               className="me-2"
@@ -185,7 +185,7 @@ const Pricing = ({ offers, cardTitle, price, bestDeal }) => {
             </svg>
             Unmetered inbound
           </li>
-          <li>
+          <li style={{ fontSize: '14px' }}>
             <svg
               width={'14px'}
               className="me-2"
@@ -198,7 +198,7 @@ const Pricing = ({ offers, cardTitle, price, bestDeal }) => {
             </svg>
             DDoS protection
           </li>
-          <li>
+          <li style={{ fontSize: '14px' }}>
             <svg
               width={'14px'}
               className="me-2"
@@ -216,7 +216,7 @@ const Pricing = ({ offers, cardTitle, price, bestDeal }) => {
             </svg>
             Root access
           </li>
-          <li>
+          <li style={{ fontSize: '14px' }}>
             <svg
               width={'14px'}
               className="me-2"

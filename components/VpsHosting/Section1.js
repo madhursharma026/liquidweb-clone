@@ -10,7 +10,7 @@ const Icon = ({ path }) => (
     xmlns="http://www.w3.org/2000/svg"
     aria-hidden="true"
   >
-    <path d={path}></path>
+    <path d={path} />
   </svg>
 )
 
@@ -101,7 +101,7 @@ export default function Section1() {
                   <div className="text-md-end text-center">
                     <Image
                       src="/trustpilotImage.png"
-                      alt="#ImgNotFound"
+                      alt="Trustpilot"
                       width={240}
                       height={20}
                       className="img-fluid"

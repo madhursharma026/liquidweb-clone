@@ -16,7 +16,7 @@ export default function Section5() {
               <img
                 src="/AmpleHarvestImage.png"
                 alt="A thriving farm supported by VPS hosting"
-                className="rounded-4 w-100 h-100 d-block"
+                className="w-100 h-100 rounded-4 d-block"
               />
             </div>
           </div>
@@ -40,13 +40,13 @@ export default function Section5() {
             <div className="flex-fill">
               <div className="row g-3 h-100">
                 <div className="col-lg-12 col-md-6">
-                  <div className="p-4 border rounded d-flex flex-column justify-content-center h-100 rounded-4">
+                  <div className="p-4 border rounded-4 d-flex flex-column justify-content-center h-100">
                     <h1 className="display-5 mb-0">1.8 billion</h1>
                     <p className="text-muted mb-0">Impressions scaled</p>
                   </div>
                 </div>
                 <div className="col-lg-12 col-md-6">
-                  <div className="p-4 border rounded d-flex flex-column justify-content-center h-100 rounded-4">
+                  <div className="p-4 border rounded-4 d-flex flex-column justify-content-center h-100">
                     <h1 className="display-5 mb-0">4,000%</h1>
                     <p className="text-muted mb-0">
                       Faster support response than their previous host

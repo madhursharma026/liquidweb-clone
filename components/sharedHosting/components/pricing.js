@@ -1,5 +1,3 @@
-import Link from 'next/link'
-
 const Pricing = ({
   cardTitle,
   cardDescription,
@@ -30,14 +28,14 @@ const Pricing = ({
         >
           {cardTitle}
         </h4>
-        <Link href="#">
+        <span>
           <button
             className="btn fw-semibold mb-3 mt-4 "
             style={{ fontSize: '14px', background: '#ECECEC' }}
           >
             Save 83%
           </button>
-        </Link>
+        </span>
         <p className="text-muted">{cardDescription}</p>
         <p className="fw-semibold fs-4">
           <span className="fw-bold">{price}</span>/mo*
@@ -45,11 +43,9 @@ const Pricing = ({
         <p className="text-muted" style={{ marginTop: '-10px' }}>
           Discounted from <del>{originalPrice}</del>
         </p>
-        <Link href="#">
-          <button className="btn btn-dark rounded-pill py-2 mb-3">
-            Get Plans
-          </button>
-        </Link>
+        <button className="btn btn-dark rounded-pill py-2 mb-3">
+          Get Plans
+        </button>
         <hr />
         <ul className="list-unstyled mt-3">
           <li>

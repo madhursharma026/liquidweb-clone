@@ -1,6 +1,10 @@
 import CommonStyle from '../../styles/commomStyle.module.css'
 
 const Section4 = () => {
+  const titleStyle = { fontSize: 'calc(4vw + 2vh + 2vmin)' }
+  const subTitleStyle = { fontSize: '16px', marginTop: '-20px' }
+  const statStyle = { fontSize: 'calc(2vw + 1vh + 1vmin)' }
+
   return (
     <div className={`my-5 py-5 ${CommonStyle.ContainerWidth}`}>
       <div className="card p-sm-5 p-3">
@@ -28,17 +32,13 @@ const Section4 = () => {
             </div>
 
             <div className="col-lg-6 offset-lg-1 d-lg-block d-none">
-              <p
-                style={{ fontSize: 'calc(4vw + 2vh + 2vmin)' }}
-                className="fw-lighter"
-              >
+              <p style={titleStyle} className="fw-lighter">
                 180K+
               </p>
-              <p style={{ fontSize: '16px', marginTop: '-20px' }}>
-                happy customers in 150+ countries
-              </p>
+              <p style={subTitleStyle}>happy customers in 150+ countries</p>
             </div>
           </div>
+
           <div className="row">
             <div className="col-lg-5">
               <div
@@ -70,38 +70,37 @@ const Section4 = () => {
             </div>
 
             <div className="col-lg-6 offset-lg-1 mt-lg-0">
+              {/* Mobile view for customers count */}
               <p
-                style={{ fontSize: 'calc(4vw + 2vh + 2vmin)' }}
+                style={titleStyle}
                 className="fw-normal d-lg-none d-block mt-5"
               >
                 180K+
               </p>
-              <p style={{ fontSize: '16px', marginTop: '-20px' }}>
-                happy customers in 150+ countries
-              </p>
+              <p style={subTitleStyle}>happy customers in 150+ countries</p>
               <div className="row">
                 <div className="col-lg-6">
-                  <p style={{ fontSize: 'calc(2vw + 1vh + 1vmin)' }}>50K+</p>
-                  <p style={{ fontSize: '16px', marginTop: '-20px' }}>
+                  <p style={statStyle}>50K+</p>
+                  <p style={subTitleStyle}>
                     servers powering customers around the globe
                   </p>
                 </div>
                 <div className="col-lg-6">
-                  <p style={{ fontSize: 'calc(2vw + 1vh + 1vmin)' }}>8.5K+</p>
-                  <p style={{ fontSize: '16px', marginTop: '-20px' }}>
+                  <p style={statStyle}>8.5K+</p>
+                  <p style={subTitleStyle}>
                     networks that are just 1 hop away from our uplinks
                   </p>
                 </div>
                 <div className="col-lg-6">
-                  <p style={{ fontSize: 'calc(2vw + 1vh + 1vmin)' }}>450</p>
-                  <p style={{ fontSize: '16px', marginTop: '-20px' }}>
+                  <p style={statStyle}>450</p>
+                  <p style={subTitleStyle}>
                     highly trained support team members ready to tackle your
                     toughest challenges
                   </p>
                 </div>
                 <div className="col-lg-6">
-                  <p style={{ fontSize: 'calc(2vw + 1vh + 1vmin)' }}>300</p>
-                  <p style={{ fontSize: '16px', marginTop: '-20px' }}>
+                  <p style={statStyle}>300</p>
+                  <p style={subTitleStyle}>
                     hours of training new support techs get during their first
                     year on the job
                   </p>

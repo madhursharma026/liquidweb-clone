@@ -10,7 +10,7 @@ const sectionData = [
       'We offer free data migration for most customers, with specialists ensuring a smooth move and minimal downtime.',
     bgStyle: {
       background:
-        'linear-gradient(45deg,#FAFFF8,#E4FAD1,#F3BCA8,#FAE0D7,#FEFDFD)',
+        'linear-gradient(45deg, #FAFFF8, #E4FAD1, #F3BCA8, #FAE0D7, #FEFDFD)',
     },
     textColor: 'text-dark',
   },
@@ -30,6 +30,7 @@ const sectionData = [
 export default function Section3() {
   return (
     <div className={`${CommonStyle.ContainerWidth} pt-5`}>
+      {/* Intro Section */}
       <div className="row align-items-center mt-5 pt-md-5">
         <div className="col-md-6">
           <h1 className="fw-normal lh-base" style={{ maxWidth: '300px' }}>
@@ -73,6 +74,8 @@ export default function Section3() {
           </div>
         </div>
       </div>
+
+      {/* Description Section */}
       <p className={`${Styles.Heading} mt-md-5 mt-3 pt-5`}>
         Decades of hosting expertise at your service
       </p>
@@ -87,6 +90,7 @@ export default function Section3() {
         uptime and top-tier support that keeps them online and thriving.
       </p>
 
+      {/* Colored Boxes Section */}
       <div className="mt-5 pt-lg-5 row">
         {sectionData.map((item, index) => (
           <div key={index} className="col-md-6 mt-md-0 mt-4">
@@ -95,6 +99,7 @@ export default function Section3() {
               style={item.bgStyle}
             >
               <h2 className={`fw-normal ${item.textColor}`}>{item.title}</h2>
+              {/* Spacer for layout adjustments */}
               <div
                 className="d-md-block d-none"
                 style={{ marginBottom: '10rem' }}
@@ -103,7 +108,7 @@ export default function Section3() {
                 className="d-md-none d-block"
                 style={{ marginBottom: '5rem' }}
               ></div>
-              <h5 className={`${item.textColor}`} style={{ maxWidth: '450px' }}>
+              <h5 className={item.textColor} style={{ maxWidth: '450px' }}>
                 {item.description}
               </h5>
             </div>
@@ -111,23 +116,20 @@ export default function Section3() {
         ))}
       </div>
 
+      {/* Services Sections */}
       <Services
-        title={'Instant, easy scalability'}
-        description={
-          'Quickly scale your VPS server up or down from the command line or your management dashboard to handle growing demand.'
-        }
+        title="Instant, easy scalability"
+        description="Quickly scale your VPS server up or down from the command line or your management dashboard to handle growing demand."
         btnNeeded={false}
-        btnText={''}
-        videoContainerORGraphContainer={'video'}
+        btnText=""
+        videoContainerORGraphContainer="video"
       />
       <Services
-        title={'Lightning-fast VPS hosting'}
-        description={
-          'Sleeknode is known for delivering the fastest Linux, Apache, MySQL, and PHP (LAMP) stack performance. A third-party analyst found that our VPS speed is faster than Rackspace, DigitalOcean, and Amazon.'
-        }
+        title="Lightning-fast VPS hosting"
+        description="Sleeknode is known for delivering the fastest Linux, Apache, MySQL, and PHP (LAMP) stack performance. A third-party analyst found that our VPS speed is faster than Rackspace, DigitalOcean, and Amazon."
         btnNeeded={true}
-        btnText={'Explore Cloud VPS Hosting'}
-        videoContainerORGraphContainer={'graph'}
+        btnText="Explore Cloud VPS Hosting"
+        videoContainerORGraphContainer="graph"
       />
     </div>
   )

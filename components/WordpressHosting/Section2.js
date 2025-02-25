@@ -29,6 +29,17 @@ const pricingPlans = [
   },
 ]
 
+const trustedLogos = [
+  '/logo1.png',
+  '/logo2.png',
+  '/logo3.png',
+  '/logo4.png',
+  '/logo5.png',
+  '/logo6.png',
+  '/logo7.png',
+  '/logo8.png',
+]
+
 export default function Section2() {
   return (
     <div className={`${CommonStyle.ContainerWidth} mt-5 py-5`}>
@@ -36,6 +47,7 @@ export default function Section2() {
         WordPress hosting plans for any brand
       </h1>
 
+      {/* Pricing Cards */}
       <div className="row justify-content-center">
         {pricingPlans.map((plan, index) => (
           <div className="col-md-4 mt-3" key={index}>
@@ -44,65 +56,19 @@ export default function Section2() {
         ))}
       </div>
 
+      {/* Trusted Logos Section */}
       <div className="my-5">
         <h3 className="text-muted fw-normal">Trusted by top brands</h3>
         <div className="row justify-content-center align-items-center">
-          <div className={`col-lg col-md-3 col-4 pt-5 text-center`}>
-            <img
-              src={'/logo1.png'}
-              alt="Company Logo"
-              className={`img-fluid ${Styles.logoImg}`}
-            />
-          </div>
-          <div className={`col-lg col-md-3 col-4 pt-5 text-center`}>
-            <img
-              src={'/logo2.png'}
-              alt="Company Logo"
-              className={`img-fluid ${Styles.logoImg}`}
-            />
-          </div>
-          <div className={`col-lg col-md-3 col-4 pt-5 text-center`}>
-            <img
-              src={'/logo3.png'}
-              alt="Company Logo"
-              className={`img-fluid ${Styles.logoImg}`}
-            />
-          </div>
-          <div className={`col-lg col-md-3 col-4 pt-5 text-center`}>
-            <img
-              src={'/logo4.png'}
-              alt="Company Logo"
-              className={`img-fluid ${Styles.logoImg}`}
-            />
-          </div>
-          <div className={`col-lg col-md-3 col-4 pt-5 text-center`}>
-            <img
-              src={'/logo5.png'}
-              alt="Company Logo"
-              className={`img-fluid ${Styles.logoImg}`}
-            />
-          </div>
-          <div className={`col-lg col-md-3 col-4 pt-5 text-center`}>
-            <img
-              src={'/logo6.png'}
-              alt="Company Logo"
-              className={`img-fluid ${Styles.logoImg}`}
-            />
-          </div>
-          <div className={`col-lg col-md-3 col-4 pt-5 text-center`}>
-            <img
-              src={'/logo7.png'}
-              alt="Company Logo"
-              className={`img-fluid ${Styles.logoImg}`}
-            />
-          </div>
-          <div className={`col-lg col-md-3 col-4 pt-5 text-center`}>
-            <img
-              src={'/logo8.png'}
-              alt="Company Logo"
-              className={`img-fluid ${Styles.logoImg}`}
-            />
-          </div>
+          {trustedLogos.map((src, index) => (
+            <div key={index} className="col-lg col-md-3 col-4 pt-5 text-center">
+              <img
+                src={src}
+                alt="Company Logo"
+                className={`img-fluid ${Styles.logoImg}`}
+              />
+            </div>
+          ))}
         </div>
       </div>
     </div>

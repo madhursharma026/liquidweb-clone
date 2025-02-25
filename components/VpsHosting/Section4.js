@@ -235,7 +235,7 @@ export default function Section4() {
             {pricingData.map((group, groupIndex) =>
               group.rows.map((row, rowIndex) => (
                 <tr key={`${groupIndex}-${rowIndex}`}>
-                  {/* Show category name only in the first row */}
+                  {/* Display category only once per group */}
                   {rowIndex === 0 && (
                     <td
                       rowSpan={group.rows.length}

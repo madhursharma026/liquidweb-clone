@@ -23,18 +23,13 @@ const Services = ({ title, description, btnText, imageOrVideo, sourceURL }) => {
 
       <div className="col-md-6 mt-md-0 mt-3 text-center">
         {imageOrVideo === 'image' ? (
-          <img src={sourceURL} alt="#ImgNotFound" className="w-100 h-auto" />
-        ) : (
-          <></>
-        )}
-        {imageOrVideo === 'video' ? (
+          <img src={sourceURL} alt="Service visual" className="w-100 h-auto" />
+        ) : imageOrVideo === 'video' ? (
           <video autoPlay loop muted playsInline className="w-100 h-auto">
             <source src={sourceURL} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
-        ) : (
-          <></>
-        )}
+        ) : null}
       </div>
     </div>
   )

@@ -5,6 +5,7 @@ export default function Section3() {
   return (
     <div className={`${CommonStyle.ContainerWidth} mt-5 py-5`}>
       <div className="row">
+        {/* Left Column - Text Content */}
         <div className="col-lg-4 col-md-6 d-flex flex-column justify-content-center">
           <div>
             <span
@@ -17,7 +18,7 @@ export default function Section3() {
               Take your{' '}
               <span
                 className="px-2 rounded border"
-                style={{ background: '#F5F4FF' }}
+                style={{ background: '#F5F4FF', whiteSpace: 'nowrap' }}
               >
                 WordPress
               </span>{' '}
@@ -30,11 +31,12 @@ export default function Section3() {
             </p>
           </div>
         </div>
+        {/* Right Column - Image */}
         <div className="col-md-6 d-flex flex-column justify-content-center offset-lg-2 mt-md-0 mt-3">
           <div className="d-flex align-items-center justify-content-center w-100">
             <img
               src="/kadenceAIResized2.png"
-              alt="#ImgNotFound"
+              alt="Kadence AI"
               className="w-100 rounded-4"
             />
           </div>

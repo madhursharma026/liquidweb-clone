@@ -4,13 +4,13 @@ import styles from '../../styles/VpsHosting/VpsHosting.module.css'
 
 const Icon = ({ path }) => (
   <svg
-    width="15px"
+    width="15"
     viewBox="0 0 1024 1024"
     fill="currentColor"
     xmlns="http://www.w3.org/2000/svg"
     aria-hidden="true"
   >
-    <path d={path}></path>
+    <path d={path} />
   </svg>
 )
 
@@ -25,6 +25,11 @@ export default function Section1() {
       'M174.653 1024c-58.218 0-101.974-14.464-131.268-43.386-28.923-28.55-43.385-71.565-43.385-129.043v-679.143c0-57.476 14.462-100.49 43.385-129.043 29.294-28.923 73.050-43.385 131.268-43.385h674.691c58.221 0 101.792 14.462 130.714 43.385 29.293 28.553 43.942 71.567 43.942 129.043v679.143c0 57.478-14.65 100.493-43.942 129.043-28.922 28.922-72.493 43.386-130.714 43.386h-674.691zM449.981 782.598c9.641 0 18.355-2.221 26.143-6.675 7.787-4.448 14.647-11.123 20.58-20.019l261.421-412.161c3.341-5.562 6.49-11.495 9.459-17.799 2.963-6.303 4.448-12.607 4.448-18.911 0-12.979-4.819-23.176-14.464-30.592-9.638-7.787-20.39-11.681-32.256-11.681-16.32 0-29.664 8.529-40.051 25.586l-237.504 381.564-112.913-145.727c-7.046-9.27-13.905-15.574-20.58-18.911-6.303-3.338-13.534-5.006-21.692-5.006-12.608 0-23.176 4.635-31.704 13.905-8.529 8.9-12.794 19.653-12.794 32.261 0 6.303 1.113 12.607 3.338 18.911 2.596 5.933 5.933 11.681 10.012 17.243l139.611 171.317c7.416 9.638 15.018 16.499 22.805 20.576 7.787 4.083 16.501 6.118 26.142 6.118z',
   }
 
+  const scrollToPricing = () => {
+    const pricingSection = localStorage.getItem('pricingSection')
+    if (pricingSection) window.scrollTo(0, Number(pricingSection))
+  }
+
   return (
     <div className={styles.contentContainer}>
       <div className={CommonStyle.ContainerWidth}>
@@ -35,18 +40,17 @@ export default function Section1() {
               className="border px-2 py-1 rounded text-primary"
               style={{ letterSpacing: '1.4px', fontSize: '12px' }}
             >
-              Dedicated server hosting
+              Best Web hosting
             </span>
             <h1 className={`${styles.mainHeading} mt-4`}>
-              Dedicated servers:{' '}
+              Sleeknode Hosting:{' '}
               <span
                 className="px-2 rounded border"
                 style={{ background: '#F5F4FF', whiteSpace: 'nowrap' }}
               >
                 High performance
               </span>
-              {', '}
-              zero compromise
+              , zero compromise
             </h1>
             <ul
               className="ps-0"
@@ -65,22 +69,35 @@ export default function Section1() {
                 <span className="ps-3">Built to spec</span>
               </li>
             </ul>
-            <p className="text-muted fw-normal fs-4">Starting at $39.50/mo</p>
-            <div>
+            <p className="text-muted fw-normal fs-4">Starting at $4.50/mo</p>
+            <div className="d-flex align-items-center mt-3">
               <button
-                className={`rounded-pill text-center mt-4 ${styles.customButton}`}
+                className={`rounded-pill text-center ${styles.customButton}`}
+                style={{ marginRight: '1rem' }}
+                onClick={scrollToPricing}
               >
-                Explore Bare Metals Server{' '}
-                <span className={styles.hiddenArrow}>→</span>
+                Explore Hosting <span className={styles.hiddenArrow}> →</span>
               </button>
               <button
-                className={`rounded-pill bg-white text-black mt-4 ms-3 ${styles.customButton}`}
+                className="rounded-pill bg-white text-black d-inline-flex align-items-center"
+                style={{ padding: '0.5rem 1rem', border: '1px solid #000' }}
               >
-                Chat with an expert{' '}
-                <span className={styles.hiddenArrow}>→</span>
+                <video
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  width="40"
+                  className="img-fluid rounded-circle me-2"
+                >
+                  <source src="/chatWithAnExpertVideo.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+                <span>Chat with an expert</span>
               </button>
             </div>
           </div>
+          {/* Right Column */}
           <div className="col-md-6 mt-md-0 mt-3 d-flex flex-column justify-content-center">
             <div className="d-flex align-items-center justify-content-center w-100">
               <div className="p-lg-5">
@@ -99,7 +116,7 @@ export default function Section1() {
                 <div className="text-md-end text-center">
                   <Image
                     src="/trustpilotImage.png"
-                    alt="#ImgNotFound"
+                    alt="Trustpilot"
                     width={240}
                     height={20}
                     className="img-fluid"

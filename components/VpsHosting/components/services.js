@@ -8,61 +8,55 @@ const Services = ({
   btnText,
   videoContainerORGraphContainer,
 }) => {
+  // Toggle state for circle animation (video view)
   const [isOpen, setIsOpen] = useState(false)
-
   useEffect(() => {
     const interval = setInterval(() => {
       setIsOpen((prev) => !prev)
     }, 2000)
-
     return () => clearInterval(interval)
   }, [])
 
+  // Toggle state for graph expansion
   const [expanded, setExpanded] = useState(false)
-
   useEffect(() => {
     const interval = setInterval(() => {
       setExpanded(true)
-      setTimeout(() => setExpanded(false), 2000) // Close after 2 seconds
-    }, 4000) // Open after 1 second
-
+      setTimeout(() => setExpanded(false), 2000) // Auto collapse after 2 seconds
+    }, 4000) // Toggle every 4 seconds
     return () => clearInterval(interval)
   }, [])
 
   return (
     <div className="row align-items-center mt-5 pt-md-5">
       <div className="col-md-6">
-        <div>
-          <h1 className="fw-normal lh-2" style={{ maxWidth: '300px' }}>
-            {title}
-          </h1>
-          <p
-            className="fw-normal mt-3"
-            style={{ fontSize: '18px', maxWidth: '450px' }}
+        <h1 className="fw-normal lh-2" style={{ maxWidth: '300px' }}>
+          {title}
+        </h1>
+        <p
+          className="fw-normal mt-3"
+          style={{ fontSize: '18px', maxWidth: '450px' }}
+        >
+          {description}
+        </p>
+        {btnNeeded && (
+          <button
+            className={`rounded-pill text-center mt-5 ${styles.customButton}`}
           >
-            {description}
-          </p>
-          {btnNeeded ? (
-            <button
-              className={`rounded-pill text-center mt-5 ${styles.customButton}`}
-            >
-              {btnText} <span className={styles.hiddenArrow}>→</span>
-            </button>
-          ) : (
-            <></>
-          )}
-        </div>
+            {btnText} <span className={styles.hiddenArrow}>→</span>
+          </button>
+        )}
       </div>
 
       <div className="col-md-6 mt-md-0 mt-3 text-center">
-        {videoContainerORGraphContainer === 'video' ? (
+        {videoContainerORGraphContainer === 'video' && (
           <div className={`${styles.circleWrapper} w-100`}>
             <div className={styles.circleContainer}>
               <div
                 className={`${styles.circle} ${
                   isOpen ? styles.circleOpen : styles.circleClose
                 }`}
-              ></div>
+              />
               <video
                 src="/scalability.mp4"
                 autoPlay
@@ -72,9 +66,9 @@ const Services = ({
               />
             </div>
           </div>
-        ) : null}
+        )}
 
-        {videoContainerORGraphContainer === 'graph' ? (
+        {videoContainerORGraphContainer === 'graph' && (
           <div className={styles.graphContainer}>
             <div className={styles.barsWrapper}>
               {[
@@ -91,13 +85,13 @@ const Services = ({
                         black ? styles.barFillBlack : styles.barFillWhite
                       } ${expanded ? styles.expanded : styles.collapsed}`}
                       style={{ width: expanded ? width : '0%' }}
-                    ></div>
+                    />
                   </div>
                 </div>
               ))}
             </div>
           </div>
-        ) : null}
+        )}
       </div>
     </div>
   )

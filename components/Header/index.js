@@ -7,94 +7,79 @@ import CommonStyle from '../../styles/commomStyle.module.css'
 import style from '../../styles/Header/Header.module.css'
 
 const Header = () => {
-  const handleShow = () => setShow(true)
   const [show, setShow] = useState(false)
-  const handleClose = () => setShow(false)
   const [hasScrolled, setHasScrolled] = useState(false)
 
   useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 0) {
-        setHasScrolled(true)
-      } else {
-        setHasScrolled(false)
-      }
-    }
+    const handleScroll = () => setHasScrolled(window.scrollY > 0)
     window.addEventListener('scroll', handleScroll)
-    return () => {
-      window.removeEventListener('scroll', handleScroll)
-    }
+    return () => window.removeEventListener('scroll', handleScroll)
   }, [])
+
+  const toggleOffcanvas = () => setShow((prev) => !prev)
 
   return (
     <div
       className="bg-white fixed-top"
       style={{
-        boxShadow: hasScrolled
-          ? 'rgba(99, 99, 99, 0.2) 0px 2px 8px 0px'
-          : 'none',
+        boxShadow: hasScrolled ? 'rgba(99, 99, 99, 0.2) 0px 2px 8px' : 'none',
       }}
     >
-      <p className={`${style.announcementBar}`}>
-        Get blazing-fast processing and unmatched efficiency with our GPU
+      <p className={style.announcementBar}>
+        Get blazing-fast processing and unmatched efficiency with our VPS
         hosting—now 30% off.
-        <Link href="#" className={`btn mx-2 ${style.shopButton}`}>
+        <Link href="/vps-hosting" className={`btn mx-2 ${style.shopButton}`}>
           Shop now
         </Link>
         →
       </p>
-      <div className={`${CommonStyle.ContainerWidth}`}>
+
+      <div className={CommonStyle.ContainerWidth}>
         <Navbar expand="lg" className="py-3">
           <Link
             href="/"
             className="fw-semibold text-decoration-none text-black"
-            style={{ fontSize: '22px' }}
           >
-            <img src="/MainLogo.png" alt="#ImgNotFound" width={'120'} />
+            <img src="/MainLogo.png" alt="Logo" width="120" />
           </Link>
 
           <Navbar.Toggle
-            aria-controls="basic-navbar-nav"
+            aria-controls="navbar-menu"
             className="border-0"
-            onClick={handleShow}
+            onClick={toggleOffcanvas}
           />
 
-          <Navbar.Collapse id="basic-navbar-nav">
+          <Navbar.Collapse id="navbar-menu">
             <Nav className="me-auto ms-4 d-lg-block d-none">
-              <Link
-                href="/vps-hosting"
-                className="px-3 text-decoration-none text-black"
-              >
-                VPS Hosting Plans
-              </Link>
-              <Link
-                href="/wordpress-hosting"
-                className="px-3 text-decoration-none text-black"
-              >
-                WordPress Hosting
-              </Link>
-              <Link
-                href="/web-hosting"
-                className="px-3 text-decoration-none text-black"
-              >
-                Shared Hosting
-              </Link>
+              {[
+                'vps-hosting',
+                'wordpress-hosting',
+                'web-hosting',
+                'hosting',
+              ].map((path) => (
+                <Link
+                  key={path}
+                  href={`/${path}`}
+                  className="px-xl-3 px-2 text-decoration-none text-black"
+                >
+                  {path
+                    .replace('-', ' ')
+                    .replace(/\b\w/g, (c) => c.toUpperCase())}
+                </Link>
+              ))}
             </Nav>
           </Navbar.Collapse>
 
           <Navbar.Collapse className="justify-content-end d-lg-block d-none">
-            <Link
-              href="#Support"
-              className="px-3 text-decoration-none text-black"
-            >
-              Support
-            </Link>
-            <Link
-              href="#Contact"
-              className="px-3 text-decoration-none text-black"
-            >
-              Contact
-            </Link>
+            {['Support', 'Contact'].map((item) => (
+              <Link
+                key={item}
+                href={`#${item}`}
+                className="px-xl-3 px-2 text-decoration-none text-black"
+              >
+                {item}
+              </Link>
+            ))}
             <Link
               href="#Login"
               className="px-3 text-decoration-none btn btn-outline-dark"
@@ -107,7 +92,7 @@ const Header = () => {
 
       <Offcanvas
         show={show}
-        onHide={handleClose}
+        onHide={toggleOffcanvas}
         placement="top"
         style={{ height: '100%' }}
       >
@@ -115,55 +100,34 @@ const Header = () => {
           <Offcanvas.Title>
             <img
               src="/MainLogo.png"
-              alt="#ImgNotFound"
-              width={'120'}
-              onClick={handleClose}
+              alt="Logo"
+              width="120"
+              onClick={toggleOffcanvas}
               style={{ cursor: 'pointer' }}
             />
           </Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
           <ul className="list-group list-group-flush">
-            <li className="list-group-item">
-              <Link
-                href="/vps-hosting"
-                className="text-decoration-none text-black fw-semibold"
-              >
-                VPS Hosting Plans
-              </Link>
-            </li>
-            <li className="list-group-item">
-              <Link
-                href="/wordpress-hosting"
-                className="text-decoration-none text-black fw-semibold"
-              >
-                WordPress Hosting
-              </Link>
-            </li>
-            <li className="list-group-item">
-              <Link
-                href="/web-hosting"
-                className="text-decoration-none text-black fw-semibold"
-              >
-                Shared Hosting
-              </Link>
-            </li>
-            <li className="list-group-item">
-              <Link
-                href="#Support"
-                className="text-decoration-none text-black fw-semibold"
-              >
-                Support
-              </Link>
-            </li>
-            <li className="list-group-item">
-              <Link
-                href="#Contact"
-                className="text-decoration-none text-black fw-semibold"
-              >
-                Contact
-              </Link>
-            </li>
+            {[
+              'vps-hosting',
+              'wordpress-hosting',
+              'web-hosting',
+              'hosting',
+              'Support',
+              'Contact',
+            ].map((path) => (
+              <li key={path} className="list-group-item">
+                <Link
+                  href={path.startsWith('#') ? path : `/${path}`}
+                  className="text-decoration-none text-black fw-semibold"
+                >
+                  {path
+                    .replace('-', ' ')
+                    .replace(/\b\w/g, (c) => c.toUpperCase())}
+                </Link>
+              </li>
+            ))}
             <li className="list-group-item">
               <Link
                 href="#Login"

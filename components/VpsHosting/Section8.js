@@ -1,7 +1,45 @@
 import CommonStyle from '../../styles/commomStyle.module.css'
 import Styles from '../../styles/VpsHosting/VpsHosting.module.css'
 
-export default function Section5() {
+export default function Section8() {
+  const formFields = [
+    {
+      id: 'firstName',
+      label: 'First Name*',
+      type: 'text',
+      placeholder: 'First Name',
+      required: true,
+    },
+    {
+      id: 'lastName',
+      label: 'Last Name*',
+      type: 'text',
+      placeholder: 'Last Name',
+      required: true,
+    },
+    {
+      id: 'email',
+      label: 'Email*',
+      type: 'email',
+      placeholder: 'Email',
+      required: true,
+    },
+    {
+      id: 'phone',
+      label: 'Phone Number',
+      type: 'tel',
+      placeholder: 'Phone Number',
+      required: false,
+    },
+    {
+      id: 'company',
+      label: 'Company',
+      type: 'text',
+      placeholder: 'Company',
+      required: false,
+    },
+  ]
+
   return (
     <div
       style={{
@@ -33,55 +71,22 @@ export default function Section5() {
             >
               <h2 className="mb-4">Get in touch with an expert</h2>
               <form>
-                {[
-                  {
-                    id: 'firstName',
-                    label: 'First Name*',
-                    type: 'text',
-                    placeholder: 'First Name',
-                    required: true,
-                  },
-                  {
-                    id: 'lastName',
-                    label: 'Last Name*',
-                    type: 'text',
-                    placeholder: 'Last Name',
-                    required: true,
-                  },
-                  {
-                    id: 'email',
-                    label: 'Email*',
-                    type: 'email',
-                    placeholder: 'Email',
-                    required: true,
-                  },
-                  {
-                    id: 'phone',
-                    label: 'Phone Number',
-                    type: 'tel',
-                    placeholder: 'Phone Number',
-                  },
-                  {
-                    id: 'company',
-                    label: 'Company',
-                    type: 'text',
-                    placeholder: 'Company',
-                  },
-                ].map(({ id, label, type, placeholder, required }) => (
-                  <div className="mb-3" key={id}>
-                    <label htmlFor={id} className="form-label">
-                      {label}
-                    </label>
-                    <input
-                      type={type}
-                      className="form-control"
-                      id={id}
-                      placeholder={placeholder}
-                      required={required}
-                    />
-                  </div>
-                ))}
-
+                {formFields.map(
+                  ({ id, label, type, placeholder, required }) => (
+                    <div className="mb-3" key={id}>
+                      <label htmlFor={id} className="form-label">
+                        {label}
+                      </label>
+                      <input
+                        type={type}
+                        className="form-control"
+                        id={id}
+                        placeholder={placeholder}
+                        required={required}
+                      />
+                    </div>
+                  )
+                )}
                 <button
                   type="submit"
                   className="btn btn-dark w-100 rounded-pill"

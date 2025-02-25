@@ -15,44 +15,34 @@ const Section6 = () => {
         </div>
       </div>
 
-      {/* {[...Array(4)].map((_, index) => ( */}
       <Services
-        title={'Unbeatable hosting uptime'}
-        description={
-          '100% guaranteed network uptime means your business is always online, so you never miss a customer, a sale, or an opportunity to grow.'
-        }
-        btnText={'Review Our SLA'}
-        imageOrVideo={'image'}
+        title="Unbeatable hosting uptime"
+        description="100% guaranteed network uptime means your business is always online, so you never miss a customer, a sale, or an opportunity to grow."
+        btnText="Review Our SLA"
+        imageOrVideo="image"
         sourceURL="/100PercentUpTime.png"
       />
       <Services
-        title={'Fully managed web hosting'}
-        description={
-          'Server management and maintenance are available for most website hosting solutions. Let our team handle the technical details, so you can focus on your business.'
-        }
-        btnText={'Browse Support Packages'}
-        imageOrVideo={'video'}
+        title="Fully managed web hosting"
+        description="Server management and maintenance are available for most website hosting solutions. Let our team handle the technical details, so you can focus on your business."
+        btnText="Browse Support Packages"
+        imageOrVideo="video"
         sourceURL="/managedHosting.mp4"
       />
       <Services
-        title={'24/7 expert support'}
-        description={
-          'Experience peace of mind with round-the-clock support—our web hosting experts are always a click away, ready to assist you whenever you need it.'
-        }
-        btnText={'Get Help Now'}
-        imageOrVideo={'video'}
+        title="24/7 expert support"
+        description="Experience peace of mind with round-the-clock support—our web hosting experts are always a click away, ready to assist you whenever you need it."
+        btnText="Get Help Now"
+        imageOrVideo="video"
         sourceURL="/supportVideo.mp4"
       />
       <Services
-        title={'Easy web hosting migrations'}
-        description={
-          'Switching to Sleeknode hosting is virtually seamless—our expert migration team is by your side at every step, ensuring a smooth website transition with minimal downtime. '
-        }
-        btnText={'Learn About Our Process'}
-        imageOrVideo={'video'}
+        title="Easy web hosting migrations"
+        description="Switching to Sleeknode hosting is virtually seamless—our expert migration team is by your side at every step, ensuring a smooth website transition with minimal downtime."
+        btnText="Learn About Our Process"
+        imageOrVideo="video"
         sourceURL="/easyHosting.mp4"
       />
-      {/* ))} */}
     </div>
   )
 }
