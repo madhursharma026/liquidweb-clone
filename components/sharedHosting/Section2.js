@@ -8,7 +8,7 @@ export default function Section2() {
   useEffect(() => {
     if (myRef.current) {
       // Store the offset top value adjusted by 150 pixels in localStorage
-      localStorage.setItem('webPricingSection', myRef.current.offsetTop - 150)
+      localStorage.setItem('webPricingSection', myRef.current.offsetTop - 100)
     }
   }, [])
   return (
