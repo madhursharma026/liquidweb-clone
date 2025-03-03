@@ -1,3 +1,4 @@
+import { useEffect, useRef } from 'react'
 import CommonStyle from '../../styles/commomStyle.module.css'
 import Styles from '../../styles/VpsHosting/VpsHosting.module.css'
 import Pricing from './components/pricing'
@@ -48,8 +49,17 @@ export default function Section2() {
     '/logo8.png',
   ]
 
+  const myRef = useRef(null)
+
+  useEffect(() => {
+    if (myRef.current) {
+      // Store the offset top value adjusted by 150 pixels in localStorage
+      localStorage.setItem('vpsPricingSection', myRef.current.offsetTop - 150)
+    }
+  }, [])
+
   return (
-    <div className={CommonStyle.ContainerWidth}>
+    <div className={CommonStyle.ContainerWidth} ref={myRef}>
       {/* Pricing Cards Section */}
       <div className="row justify-content-center">
         {pricingCards.map((card, index) => (

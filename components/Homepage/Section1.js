@@ -26,8 +26,8 @@ export default function Section1() {
   }
 
   const scrollToPricing = () => {
-    const pricingSection = localStorage.getItem('pricingSection')
-    if (pricingSection) window.scrollTo(0, Number(pricingSection))
+    const homePricingSection = localStorage.getItem('homePricingSection')
+    if (homePricingSection) window.scrollTo(0, Number(homePricingSection))
   }
 
   return (

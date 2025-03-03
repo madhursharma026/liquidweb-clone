@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import CommonStyle from '../../styles/commomStyle.module.css'
 import styles from '../../styles/Homepage/Homepage.module.css'
 
@@ -37,12 +38,13 @@ const Section7 = () => {
                     hosting services or transitioning from your current host
                     stress-free.
                   </p>
-                  <button
+                  <Link
+                    href="hosting"
                     type="button"
                     className="btn btn-light rounded-pill mt-3"
                   >
                     Explore All Hosting
-                  </button>
+                  </Link>
                   <button
                     type="button"
                     className="btn btn-outline-dark text-white ms-3 rounded-pill mt-3"

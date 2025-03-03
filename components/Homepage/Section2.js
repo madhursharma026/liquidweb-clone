@@ -10,7 +10,7 @@ const Section2 = () => {
   useEffect(() => {
     if (myRef.current) {
       // Store the offset top value adjusted by 150 pixels in localStorage
-      localStorage.setItem('pricingSection', myRef.current.offsetTop - 150)
+      localStorage.setItem('homePricingSection', myRef.current.offsetTop - 150)
     }
   }, [])
 
@@ -23,6 +23,7 @@ const Section2 = () => {
       cardDescription: 'For raw power and control',
       price: '39.50',
       buttonText: 'Web',
+      buttonURL: 'web-hosting',
       features: [
         'Unlimited Websites',
         '400,000 Visits Monthly',
@@ -41,6 +42,7 @@ const Section2 = () => {
       cardDescription: 'Best hosting for scalability and reliability',
       price: '5.25',
       buttonText: 'Wordpress',
+      buttonURL: 'wordpress-hosting',
       features: [
         'Free staging sites',
         '1-250 sites',
@@ -57,6 +59,7 @@ const Section2 = () => {
       cardDescription: 'Best web hosting for flexibility and affordability',
       price: '23.40',
       buttonText: 'VPS',
+      buttonURL: 'vps-hosting',
       features: [
         'Linux & Windows',
         'Fully or self-managed',

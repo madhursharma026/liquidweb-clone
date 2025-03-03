@@ -1,3 +1,4 @@
+import { useEffect, useRef } from 'react'
 import CommonStyle from '../../styles/commomStyle.module.css'
 import Styles from '../../styles/VpsHosting/VpsHosting.module.css'
 import Pricing from './components/pricing'
@@ -41,8 +42,19 @@ const trustedLogos = [
 ]
 
 export default function Section2() {
+  const myRef = useRef(null)
+
+  useEffect(() => {
+    if (myRef.current) {
+      // Store the offset top value adjusted by 150 pixels in localStorage
+      localStorage.setItem(
+        'wordpressPricingSection',
+        myRef.current.offsetTop - 150
+      )
+    }
+  }, [])
   return (
-    <div className={`${CommonStyle.ContainerWidth} mt-5 py-5`}>
+    <div className={`${CommonStyle.ContainerWidth} mt-5 py-5`} ref={myRef}>
       <h1 className={`${Styles.Heading} mt-md-5 mt-3`}>
         WordPress hosting plans for any brand
       </h1>

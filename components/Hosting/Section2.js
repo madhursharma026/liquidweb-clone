@@ -20,10 +20,19 @@ export default function Section2() {
           </div>
         </div>
         <div className="col-lg-3 col-md-6 mt-lg-0 mt-3 px-2">
-          <div class="card p-2 h-100 bg-light">
+          <div
+            class="card p-2 h-100"
+            style={{ background: '#FCFBFA', border: 0 }}
+          >
             <div class="card-body">
-              <h4>
-                What is <b>web hosting?</b>
+              <h4 style={{ lineHeight: '35px', minHeight: '80px' }}>
+                What is{' '}
+                <span
+                  className="px-2 rounded border"
+                  style={{ background: '#F5F4FF', whiteSpace: 'nowrap' }}
+                >
+                  web hosting?
+                </span>
               </h4>
               <p>
                 Web hosting provides storage for and access to a website or
@@ -36,10 +45,20 @@ export default function Section2() {
           </div>
         </div>
         <div className="col-lg-3 col-md-6 mt-lg-0 mt-3 px-2">
-          <div class="card p-2 h-100 bg-light">
+          <div
+            class="card p-2 h-100"
+            style={{ background: '#FCFBFA', border: 0 }}
+          >
             <div class="card-body">
-              <h4>
-                How does <b>web hosting</b> work?
+              <h4 style={{ lineHeight: '35px', minHeight: '80px' }}>
+                How does{' '}
+                <span
+                  className="px-2 rounded border"
+                  style={{ background: '#F5F4FF', whiteSpace: 'nowrap' }}
+                >
+                  web hosting
+                </span>{' '}
+                work?
               </h4>
               <p>
                 With web hosting, your site and all the files that make it up
@@ -52,10 +71,19 @@ export default function Section2() {
           </div>
         </div>
         <div className="col-lg-3 col-md-6 mt-lg-0 mt-3 px-2">
-          <div class="card p-2 h-100 bg-light">
+          <div
+            class="card p-2 h-100"
+            style={{ background: '#FCFBFA', border: 0 }}
+          >
             <div class="card-body">
-              <h4>
-                Why do I need a <b>web host?</b>
+              <h4 style={{ lineHeight: '35px', minHeight: '80px' }}>
+                Why do I need a{' '}
+                <span
+                  className="px-2 rounded border"
+                  style={{ background: '#F5F4FF', whiteSpace: 'nowrap' }}
+                >
+                  web host?
+                </span>
               </h4>
               <p>
                 You can technically host your website yourself, but it’s

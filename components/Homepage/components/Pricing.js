@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import styles from '../../../styles/Homepage/Homepage.module.css'
 
 const Pricing = ({
@@ -5,6 +6,7 @@ const Pricing = ({
   offers,
   features,
   cardTitle,
+  buttonURL,
   buttonText,
   showFeatures,
   toggleFeatures,
@@ -41,13 +43,14 @@ const Pricing = ({
       <h2 className="fw-semibold lh-1">
         <span>${price}</span>/mo
       </h2>
-      <button
-        className={`rounded-pill mt-3 ${styles.customButton}`}
+      <Link
+        href={`/${buttonURL}`}
+        className={`rounded-pill btn mt-3 ${styles.customButton}`}
         style={{ padding: '5px 10px', fontSize: '15px' }}
       >
         Explore {buttonText} Hosting{' '}
         <span className={styles.hiddenArrow}>→</span>
-      </button>
+      </Link>
       <div
         className="d-flex justify-content-between align-items-center mt-4"
         onClick={toggleFeatures}

@@ -1,9 +1,18 @@
+import { useEffect, useRef } from 'react'
 import CommonStyle from '../../styles/commomStyle.module.css'
 import Pricing from './components/pricing'
 
 export default function Section2() {
+  const myRef = useRef(null)
+
+  useEffect(() => {
+    if (myRef.current) {
+      // Store the offset top value adjusted by 150 pixels in localStorage
+      localStorage.setItem('webPricingSection', myRef.current.offsetTop - 150)
+    }
+  }, [])
   return (
-    <section className={`${CommonStyle.ContainerWidth}`}>
+    <section className={`${CommonStyle.ContainerWidth}`} ref={myRef}>
       <h1>Web Hosting Plans</h1>
       <p className="fs-5">
         For a limited time, get a <b>free domain</b> and{' '}

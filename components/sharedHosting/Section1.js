@@ -3,6 +3,10 @@ import CommonStyle from '../../styles/commomStyle.module.css'
 import styles from '../../styles/VpsHosting/VpsHosting.module.css'
 
 export default function Section1() {
+  const scrollToPricing = () => {
+    const webPricingSection = localStorage.getItem('webPricingSection')
+    if (webPricingSection) window.scrollTo(0, Number(webPricingSection))
+  }
   return (
     <div className="p-0">
       <div className={styles.contentContainer}>
@@ -38,6 +42,7 @@ export default function Section1() {
               </div>
               <button
                 className={`rounded-pill text-center mt-4 ${styles.customButton}`}
+                onClick={scrollToPricing}
               >
                 Explore Shared Hosting{' '}
                 <span className={styles.hiddenArrow}>→</span>

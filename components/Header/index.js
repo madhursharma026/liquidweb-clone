@@ -51,22 +51,19 @@ const Header = () => {
 
           <Navbar.Collapse id="navbar-menu">
             <Nav className="me-auto ms-4 d-lg-block d-none">
-              {[
-                'vps-hosting',
-                'wordpress-hosting',
-                'web-hosting',
-                'hosting',
-              ].map((path) => (
-                <Link
-                  key={path}
-                  href={`/${path}`}
-                  className="px-xl-3 px-2 text-decoration-none text-black"
-                >
-                  {path
-                    .replace('-', ' ')
-                    .replace(/\b\w/g, (c) => c.toUpperCase())}
-                </Link>
-              ))}
+              {['vps-hosting', 'wordpress-hosting', 'web-hosting'].map(
+                (path) => (
+                  <Link
+                    key={path}
+                    href={`/${path}`}
+                    className="px-3 text-decoration-none text-black"
+                  >
+                    {path
+                      .replace('-', ' ')
+                      .replace(/\b\w/g, (c) => c.toUpperCase())}
+                  </Link>
+                )
+              )}
             </Nav>
           </Navbar.Collapse>
 
@@ -75,7 +72,7 @@ const Header = () => {
               <Link
                 key={item}
                 href={`#${item}`}
-                className="px-xl-3 px-2 text-decoration-none text-black"
+                className="px-3 text-decoration-none text-black"
               >
                 {item}
               </Link>
@@ -113,7 +110,6 @@ const Header = () => {
               'vps-hosting',
               'wordpress-hosting',
               'web-hosting',
-              'hosting',
               'Support',
               'Contact',
             ].map((path) => (
