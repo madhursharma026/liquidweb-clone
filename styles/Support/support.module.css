@@ -1,0 +1,63 @@
+.imgContainer {
+    position: relative;
+    text-align: center;
+}
+
+.centeredText {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.customButton,
+.customButtonWhite {
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: 1px solid black;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.customButton {
+    color: white;
+    background-color: black;
+}
+
+.customButton:hover {
+    color: black;
+    background-color: white;
+}
+
+.hiddenArrow {
+    opacity: 0;
+    display: inline-block;
+    transform: translateX(0);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.customButton:hover .hiddenArrow,
+.customButtonWhite:hover .hiddenArrow {
+    opacity: 1;
+    transform: translateX(5px);
+}
+
+.cardContainer {
+    background-color: #f8f8f8;
+}
+
+.testimonialLogo {
+    width: 80px;
+    height: auto;
+}
+
+.percentage {
+    font-size: 1.8rem;
+    margin-top: 10px;
+    color: #333;
+}
+
+.description {
+    font-size: 1rem;
+    color: #555;
+}
