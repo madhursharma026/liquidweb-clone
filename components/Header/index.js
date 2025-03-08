@@ -68,15 +68,18 @@ const Header = () => {
           </Navbar.Collapse>
 
           <Navbar.Collapse className="justify-content-end d-lg-block d-none">
-            {['Support', 'Contact'].map((item) => (
-              <Link
-                key={item}
-                href={`#${item}`}
-                className="px-3 text-decoration-none text-black"
-              >
-                {item}
-              </Link>
-            ))}
+            <Link
+              href={`support`}
+              className="px-3 text-decoration-none text-black"
+            >
+              Support
+            </Link>
+            <Link
+              href={`#Contact`}
+              className="px-3 text-decoration-none text-black"
+            >
+              Contact
+            </Link>
             <Link
               href="#Login"
               className="px-3 text-decoration-none btn btn-outline-dark"
@@ -110,7 +113,7 @@ const Header = () => {
               'vps-hosting',
               'wordpress-hosting',
               'web-hosting',
-              'Support',
+              'support',
               'Contact',
             ].map((path) => (
               <li key={path} className="list-group-item">
