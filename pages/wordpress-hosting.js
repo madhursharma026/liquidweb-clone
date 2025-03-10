@@ -8,10 +8,31 @@ import Section3 from '@/components/WordpressHosting/Section3'
 import Section4 from '@/components/WordpressHosting/Section4'
 import Section5 from '@/components/WordpressHosting/Section5'
 import Section6 from '@/components/WordpressHosting/Section6'
+import { NextSeo } from 'next-seo'
 
 export default function WordpressHosting() {
   return (
     <>
+      <NextSeo
+        title="WordPress Hosting | Sleeknode"
+        description="This is the wordpress hosting page of my sleeknode website."
+        canonical="https://liquidweb-clone.vercel.app/"
+        openGraph={{
+          url: 'https://liquidweb-clone.vercel.app/',
+          title: 'WordPress Hosting | Sleeknode',
+          description:
+            'This is the wordpress hosting page of my sleeknode website.',
+          images: [
+            {
+              url: 'https://liquidweb-clone.vercel.app/MainLogo.png',
+              width: 1200,
+              height: 630,
+              alt: 'Sleeknode Logo',
+            },
+          ],
+          site_name: 'Sleeknode',
+        }}
+      />
       <Header />
       <Section1 />
       <hr />

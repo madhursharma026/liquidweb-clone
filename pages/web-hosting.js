@@ -11,10 +11,30 @@ import Section6 from '@/components/sharedHosting/Section6'
 import Section7 from '@/components/sharedHosting/Section7'
 import Section8 from '@/components/sharedHosting/Section8'
 import Section9 from '@/components/sharedHosting/Section9'
+import { NextSeo } from 'next-seo'
 
 export default function WebHosting() {
   return (
     <>
+      <NextSeo
+        title="Web Hosting | Sleeknode"
+        description="This is the web hosting page of my sleeknode website."
+        canonical="https://liquidweb-clone.vercel.app/"
+        openGraph={{
+          url: 'https://liquidweb-clone.vercel.app/',
+          title: 'Web Hosting | Sleeknode',
+          description: 'This is the web hosting page of my sleeknode website.',
+          images: [
+            {
+              url: 'https://liquidweb-clone.vercel.app/MainLogo.png',
+              width: 1200,
+              height: 630,
+              alt: 'Sleeknode Logo',
+            },
+          ],
+          site_name: 'Sleeknode',
+        }}
+      />
       <Header />
       <Section1 />
       <Section2 />
