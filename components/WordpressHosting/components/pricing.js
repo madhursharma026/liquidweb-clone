@@ -23,7 +23,7 @@ const Pricing = ({ offers, cardTitle, cardDescription, price, bestDeal }) => {
         <h4 className="fw-semibold">{cardTitle}</h4>
         <p className="text-muted">{cardDescription}</p>
         <h2 className="fw-semibold mt-3">
-          <span className="fw-bold">{price}</span>/mo
+          <span className="fw-bold">{price}</span>
         </h2>
         <p className="text-muted" style={{ fontSize: '0.85rem' }}>
           Our best deal on VPS.

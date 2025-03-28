@@ -13,7 +13,7 @@ const pricingPlans = [
     buttonText: 'VPS',
   },
   {
-    offers: '75% off 3 mos',
+    offers: '80% off 3 mos',
     cardTitle: 'Managed WordPress',
     cardDescription:
       'Simplify site management and free up time without sacrificing compatibility',
@@ -21,7 +21,7 @@ const pricingPlans = [
     buttonText: 'VPS',
   },
   {
-    offers: '75% off 3 mos',
+    offers: '85% off 3 mos',
     cardTitle: 'Managed WordPress',
     cardDescription:
       'Simplify site management and free up time without sacrificing compatibility',
