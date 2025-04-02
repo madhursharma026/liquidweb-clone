@@ -47,7 +47,7 @@ export default function Section7() {
           'linear-gradient(45deg, #895045, #604A62, #94666E, #A8776E, #D1957A)',
       }}
     >
-      <div className={`${CommonStyle.ContainerWidth} my-5 py-lg-5`}>
+      <div className={`${CommonStyle.ContainerWidth} my-5 py-lg-5 pb-5`}>
         <div className="row p-md-5">
           {/* Left Section */}
           <div className="col-lg-6 d-flex align-items-center">

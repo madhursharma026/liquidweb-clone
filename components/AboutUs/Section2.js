@@ -9,7 +9,7 @@ export default function Section2() {
     >
       <div className="row">
         <div
-          className="col-md-6 p-5 d-flex flex-column justify-content-center align-items-center text-center"
+          className="col-md-6 p-md-5 p-3 d-flex flex-column justify-content-center align-items-center text-center"
           style={{
             background: 'url("/supportSection2Image10.png")',
           }}
@@ -23,7 +23,7 @@ export default function Section2() {
         </div>
 
         <div
-          className="col-md-6 p-5"
+          className="col-md-6 p-md-5 p-3"
           style={{
             background: 'url("/supportSection2Image10.png")',
           }}
