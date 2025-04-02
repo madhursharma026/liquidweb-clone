@@ -62,7 +62,7 @@ export default function Section7() {
           {/* Right Section - Contact Form */}
           <div className="col-lg-6 mt-lg-0 mt-4">
             <div class="card" style={{ background: '#E7DFE3' }}>
-              <div class="card-body p-5">
+              <div class="card-body p-md-5 p-3">
                 <p className="fs-1 fw-lighter">Find your ideal hosting</p>
                 <p className="fs-4">
                   No matter your needs, we’ve got you covered.
